@@ -26,8 +26,10 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         <Image
           src={imageUrl}
           alt={title}
-          layout="fill"
-          objectFit="cover"
+          // layout="fill"
+          width={500}
+          height={500}
+          // objectFit="cover"
           className="object-cover w-full h-full"
         />
       </div>

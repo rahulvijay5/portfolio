@@ -23,16 +23,16 @@ const PushingLimitsSection: React.FC = () => {
           <div className="md:col-span-2 flex flex-col justify-end space-y-6">
             <div className="bg-white dark:bg-gray-800  bg-opacity-80 backdrop-blur-sm rounded-lg shadow-lg p-6 transform transition duration-500 hover:scale-105">
               <p className="text-gray-700 dark:text-white leading-relaxed">
-                Adventure isn't just a word; it's a way of life. Whether it's
+                Adventure isn&apos;t just a word; it&apos;s a way of life. Whether it&apos;s
                 enduring continous 4 sleepless nights on a trip to Mount Abu or
-                surviving on just bread and jam in the remote Khasi hills, I've
+                surviving on just bread and jam in the remote Khasi hills, I&apos;ve
                 always gone to extreme lengths to make every journey worthwhile.
               </p>
             </div>
 
             <div className="bg-white dark:bg-gray-800  bg-opacity-80 backdrop-blur-sm rounded-lg shadow-lg p-6 transform transition duration-500 hover:scale-105">
               <p className="text-gray-700 dark:text-white leading-relaxed">
-                From solo trips to group expeditions, I've successfully
+                From solo trips to group expeditions, I&apos;ve successfully
                 organized journeys, with the best case possible out there, from
                 travel arrangements and accommodation to itineraries and food,
                 ensuring a smooth and enjoyable experience for everyone
@@ -55,7 +55,7 @@ const PushingLimitsSection: React.FC = () => {
                   Zero Waste Expeditions
                 </h3>
                 <p className="text-sm">
-                  Committed to leaving no trace, I've successfully completed
+                  Committed to leaving no trace, I&apos;ve successfully completed
                   some of the best zero-waste trips and expeditions.
                 </p>
               </div>
@@ -99,7 +99,9 @@ const PushingLimitsSection: React.FC = () => {
                   "https://images.unsplash.com/photo-1724179016304-972febc1cc43?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?height=600&width=800&text=Photo+1"
                 }
                 alt="waste collected"
-                layout="fill"
+                // layout="fill"
+                width={500}
+                height={500}
                 className="object-cover h-full w-full rounded-t-lg"
               />
             </div>

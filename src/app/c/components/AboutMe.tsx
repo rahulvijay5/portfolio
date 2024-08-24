@@ -76,9 +76,11 @@ const AboutMeSection: React.FC = () => {
               <Image
                 src={src}
                 alt={`Rahul's adventure ${index + 1}`}
-                layout="fill"
-                objectFit="cover"
-                className="rounded-lg shadow-xl"
+                width={500}
+                height={500}
+                // layout="fill"
+                // objectFit="cover"
+                className="rounded-lg w-full h-full object-cover shadow-xl"
               />
             </div>
           ))}
@@ -92,13 +94,13 @@ const AboutMeSection: React.FC = () => {
         <div className="space-y-6">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">About Me</h2>
           <p className="text-lg leading-relaxed">
-            Hello! I'm Rahul, a passionate traveler and adventurer from the small town of Kekri in Rajasthan. My journey began in the bustling streets of Kota, where I prepared for IIT JEE and secured a spot at LNMIIT, Jaipur. However, my true education happened outside the classroom, fueled by my love for exploration and storytelling.
+            Hello! I&apos;m Rahul, a passionate traveler and adventurer from the small town of Kekri in Rajasthan. My journey began in the bustling streets of Kota, where I prepared for IIT JEE and secured a spot at LNMIIT, Jaipur. However, my true education happened outside the classroom, fueled by my love for exploration and storytelling.
           </p>
           <p className="text-lg leading-relaxed">
-            Raised in a family that cherished travel, I inherited my father's adventurous spirit and a desire to explore the unknown. With a camera in hand and an insatiable curiosity, I've roamed the diverse landscapes of India, from the vibrant festivals of Rajasthan to the serene heights of the Himalayas.
+            Raised in a family that cherished travel, I inherited my father&apos;s adventurous spirit and a desire to explore the unknown. With a camera in hand and an insatiable curiosity, I&apos;ve roamed the diverse landscapes of India, from the vibrant festivals of Rajasthan to the serene heights of the Himalayas.
           </p>
           <p className="text-lg leading-relaxed font-semibold italic">
-            My ideology is simple: life is a collection of stories waiting to be told, and I'm here to capture every moment, every experience, and share it with the world.
+            My ideology is simple: life is a collection of stories waiting to be told, and I&apos;m here to capture every moment, every experience, and share it with the world.
           </p>
         </div>
       </div>

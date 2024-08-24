@@ -38,9 +38,11 @@ const AutoImageSlider: React.FC<AutoImageSliderProps> = ({
           <Image
             src={src}
             alt={altText}
-            layout="fill"
-            objectFit="cover" // Ensure the image covers the entire container
-            className="rounded-lg" // Maintain consistent styling
+            // layout="fill"
+            width={200}
+            height={200}
+            // objectFit="cover" // Ensure the image covers the entire container
+            className="rounded-lg h-full w-full object-cover" // Maintain consistent styling
           />
         </div>
       ))}

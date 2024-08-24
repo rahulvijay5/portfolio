@@ -89,7 +89,7 @@ const CareerSection: React.FC = () => {
     <section
       ref={sectionRef}
       className={`min-h-screen bg-gradient-to-br from-gray-900 to-gray-800 text-white pt-4 pb-4 px-4 overflow-hidden transition-opacity duration-1000 snap-start flex items-center justify-center ${
-        isVisible ? "opacity-100" : "opacity-0"
+        isVisible ? "opacity-100" : "opacity-0 bg-gray-900"
       }`}
       id="passion-profession"
     >
@@ -105,7 +105,7 @@ const CareerSection: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div className="space-y-6 animate-fade-in-left">
               <p className="text-lg leading-relaxed">
-                I'm now ready to turn my passion into a profession. With my
+                I&apos;m now ready to turn my passion into a profession. With my
                 diverse skill set spanning travel planning, content creation,
                 and digital design, I am eager to take on roles that challenge
                 and inspire.
@@ -121,7 +121,7 @@ const CareerSection: React.FC = () => {
                   href="#contact"
                   className="inline-block bg-white text-gray-900 py-3 px-8 rounded-full font-bold text-lg transition-all duration-300 transform hover:scale-110 hover:rotate-3 hover:shadow-2xl"
                 >
-                  Let's Create Something Amazing Together
+                  Let&apos;s Create Something Amazing Together
                 </a>
               </div>
             </div>

@@ -43,7 +43,7 @@ const Skills = () => {
   return (
     <section className="w-full py-2 md:py-8">
       <h2 className="mb-8 mx-auto text-2xl md:text-3xl font-bold text-neutral-800 dark:text-neutral-200 font-sans">
-        Here's a brief about my skills:
+        Here&apos;s a brief about my skills:
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-8 items-end">
         <div>

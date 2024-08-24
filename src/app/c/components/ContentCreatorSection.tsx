@@ -23,7 +23,7 @@ const ContentCreatorSection: React.FC = () => {
           {/* Main Content */}
           <div className="md:col-span-2 bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6">
             <p className="text-gray-700 dark:text-gray-300 mb-6 leading-relaxed">
-              I've had the privilege of leading a team of 20 creatives to manage and cover events at LNMIIT, including the vibrant Vivacity cultural fest and the dynamic Desportivos sports fest. As the coordinator of the Imagination Club, I mentored my juniors, guiding them in photography and videography.
+              I&apos;ve had the privilege of leading a team of 20 creatives to manage and cover events at LNMIIT, including the vibrant Vivacity cultural fest and the dynamic Desportivos sports fest. As the coordinator of the Imagination Club, I mentored my juniors, guiding them in photography and videography.
             </p>
             <div className="flex flex-wrap gap-4 mb-6">
               <span className="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-semibold">

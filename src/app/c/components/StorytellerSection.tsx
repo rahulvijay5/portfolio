@@ -29,14 +29,14 @@ const StorytellerSection: React.FC = () => {
             <div
               className={`bg-white dark:bg-gray-800 p-8 rounded-lg shadow-lg flex-1 transform transition-all duration-1000 translate-y-0 opacity-100`}
             >
-              <h3 className="text-2xl font-serif mb-4 text-amber-800 dark:text-amber-300 dark:text-amber-300">
+              <h3 className="text-2xl font-serif mb-4 text-amber-800 dark:text-amber-300 ">
                 Weaving Tales from My Journeys
               </h3>
               <p className="text-lg mb-6 leading-relaxed text-gray-700 dark:text-gray-300 font-serif">
                 My life is a treasure trove of stories, each one more
                 fascinating than the last. From the bustling streets of Mathura
-                during Holi to the serene beauty of Meghalaya's Khasi hills,
-                I've experienced it all.
+                during Holi to the serene beauty of Meghalaya&apos;s Khasi hills,
+                I&apos;ve experienced it all.
               </p>
               <div className="flex items-center mb-6">
                 <MapPin className="w-6 h-6 text-amber-600 mr-2" />

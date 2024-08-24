@@ -190,7 +190,7 @@ export default function CrazyBucketList() {
           </h2>
         </div>
         <p className="text-xl font-semibold text-gray-600 dark:text-gray-400 mb-4">
-          Hard to do? but we are talking about challenges, and can't be easy.
+          Hard to do? but we are talking about challenges, and can&apos;t be easy.
         </p>
 
         <div className="relative w-full h-full" id="canvas">

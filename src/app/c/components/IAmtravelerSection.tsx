@@ -89,12 +89,12 @@ const TravelerSection: React.FC = () => {
           Embracing the World with Open Arms
         </h3>
 
-        <div className="relative h-64 md:h-96 mb-8 overflow-hidden rounded-lg shadow-lg">
+        <div className="relative h-64 md:h-96 mb-8 overflow-hidden rounded-lg shadow-lg object-cover">
           <AutoImageSlider images={images} altText="Image depicting taveling version of mine." interval={5000} transitionDuration={300}/>
         </div>
 
         <p className="text-lg md:text-xl leading-relaxed text-center mb-8 transition-colors duration-300">
-          Traveling for me is not just about visiting places; it's about
+          Traveling for me is not just about visiting places; it&apos;s about
           immersing myself in the local culture, traditions, and life. I thrive
           on meeting new people, understanding their ways, and living like a
           local. My travels have allowed me to see the world from different

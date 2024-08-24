@@ -134,7 +134,7 @@ export function ContactPage({ purpose }: { purpose: "t" | "c" }) {
       >
         <div className="container mx-auto px-4 py-4 md:py-8">
           <h1 className="text-6xl md:text-8xl font-bold mb-8 md:mb-16 tracking-tight">
-            Let's
+            Let&apos;s
             <br />
             <span className="transform -rotate-2 text-indigo-600 dark:text-indigo-400 flex">
               Connect <ArrowUpRight className="" />
@@ -220,7 +220,7 @@ export function ContactPage({ purpose }: { purpose: "t" | "c" }) {
       >
         <div className="container mx-auto px-4 py-4 md:py-8">
           <h1 className="text-6xl md:text-8xl font-bold mb-8 md:mb-16 tracking-tight">
-            Let's
+            Let&apos;s
             <br />
             <span className="transform -rotate-2 text-indigo-600 dark:text-indigo-400 flex">
               Connect <ArrowUpRight className="" />

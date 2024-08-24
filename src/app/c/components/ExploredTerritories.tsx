@@ -51,18 +51,18 @@ const ExploredTerritoriesSection: React.FC = () => {
               My explorations have taken me across the majestic landscapes of
               the Himalayas, from the rugged beauty of Ladakh to the lush
               valleys of Meghalaya. These journeys have been more than mere
-              travels; they've been profound experiences that have shaped my
+              travels; they&apos;ve been profound experiences that have shaped my
               understanding of nature, culture, and self.
             </p>
             <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-lg">
               Each destination holds its own unique charm: the stark beauty of
               Ladakh, the spiritual aura of Dharamshala, the colonial echoes of
               Darjeeling, and the living root bridges of Cherrapunji. These
-              places aren't just points on a map—they're chapters in an ongoing
+              places aren&apos;t just points on a map—they&apos;re chapters in an ongoing
               story of discovery and wonder.
             </p>
             <p className="text-gray-600 dark:text-gray-300 italic">
-              And that's just the Himalayas—my travels across India have their
+              And that&apos;s just the Himalayas—my travels across India have their
               own tales to tell.
             </p>
           </div>
@@ -86,7 +86,9 @@ const ExploredTerritoriesSection: React.FC = () => {
                   "https://images.unsplash.com/photo-1724179016304-972febc1cc43?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?height=600&width=800&text=Photo+1"
                 }
                 alt="waste collected"
-                layout="fill"
+                // layout="fill"
+                width={500}
+                height={500}
                 className="object-cover h-full w-full rounded-t-lg"
               />
             </div>
@@ -96,7 +98,7 @@ const ExploredTerritoriesSection: React.FC = () => {
               </h4>
               <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-2">
                 <li>
-                  Witnessed the stark beauty of Ladakh's high-altitude deserts
+                  Witnessed the stark beauty of Ladakh&apos;s high-altitude deserts
                 </li>
                 <li>Explored the lush, living root bridges of Meghalaya</li>
                 <li>

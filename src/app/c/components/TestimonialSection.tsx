@@ -176,7 +176,7 @@ const TestimonialsSection: React.FC = () => {
         {testimonials.map((testimonial, index) => (
           <div key={index} className="outline-none">
             <blockquote className="text-2xl font-light italic mb-6 text-center">
-              "{testimonial.quote}"
+            &quot;{testimonial.quote}&quot;
             </blockquote>
             <p className="text-xl font-semibold text-center mb-4">- {testimonial.name}</p>
             <div className="text-center">

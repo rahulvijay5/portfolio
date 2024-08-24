@@ -33,15 +33,15 @@ const LandingHeader: React.FC = () => {
             className="space-y-6"
           >
             <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold leading-tight">
-              Hey there, I'm <br />
+              Hey there, I&apos;m <br />
               <span className="bg-clip-text text-6xl sm:text-5xl lg:text-6xl text-transparent bg-gradient-to-r from-blue-400 to-purple-500">
                 Rahul Vijay
               </span>
             </h1>
             <p className="text-xl text-black dark:text-gray-300 leading-relaxed">
               A self-taught programmer with a passion for development. For the
-              past two years, I've been immersing myself in the world of coding,
-              often finding inspiration in the middle of the night. I'm
+              past two years, I&apos;ve been immersing myself in the world of coding,
+              often finding inspiration in the middle of the night. I&apos;m
               currently seeking an exciting software development opportunity,
               preferably in a startup environment where I can contribute and
               grow.
