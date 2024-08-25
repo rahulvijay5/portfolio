@@ -2,6 +2,7 @@
 import { GetPostResult } from "@/lib/wisp";
 import Link from "next/link";
 import sanitize from "sanitize-html";
+import { TracingBeam } from "./ui/tracing-beam";
 
 export const PostContent = ({ content }: { content: string }) => {
   return (
@@ -38,27 +39,54 @@ export const BlogPostContent = ({ post }: { post: GetPostResult["post"] }) => {
   const { title, publishedAt, createdAt, content, tags } = post;
   return (
     <div>
+      <div className="md:hidden">
       <div className="prose lg:prose-xl dark:prose-invert mx-auto lg:prose-h1:text-4xl mb-10 lg:mt-20 break-words">
-        <h1>{title}</h1>
-        <PostContent content={content} />
+          <h1>{title}</h1>
+          <PostContent content={content} />
 
-        <div className="mt-10 opacity-40 text-sm">
-          {tags.map((tag) => (
-            <Link
-              key={tag.id}
-              href={`/tag/${tag.name}`}
-              className="text-primary mr-2"
-            >
-              #{tag.name}
-            </Link>
-          ))}
-        </div>
-        <div className="text-sm opacity-40 mt-4">
-          {Intl.DateTimeFormat("en-US").format(
-            new Date(publishedAt || createdAt)
-          )}
+          <div className="mt-10 opacity-40 text-sm">
+            {tags.map((tag) => (
+              <Link
+                key={tag.id}
+                href={`/tag/${tag.name}`}
+                className="text-primary mr-2"
+              >
+                #{tag.name}
+              </Link>
+            ))}
+          </div>
+          <div className="text-sm opacity-40 mt-4">
+            {Intl.DateTimeFormat("en-US").format(
+              new Date(publishedAt || createdAt)
+            )}
+          </div>
         </div>
       </div>
+
+      {/* to hide tracing beam on mobile view: */}
+      <TracingBeam className="hidden md:block">
+        <div className="prose lg:prose-xl dark:prose-invert mx-auto lg:prose-h1:text-4xl mb-10 lg:mt-20 break-words">
+          <h1>{title}</h1>
+          <PostContent content={content} />
+
+          <div className="mt-10 opacity-40 text-sm">
+            {tags.map((tag) => (
+              <Link
+                key={tag.id}
+                href={`/tag/${tag.name}`}
+                className="text-primary mr-2"
+              >
+                #{tag.name}
+              </Link>
+            ))}
+          </div>
+          <div className="text-sm opacity-40 mt-4">
+            {Intl.DateTimeFormat("en-US").format(
+              new Date(publishedAt || createdAt)
+            )}
+          </div>
+        </div>
+      </TracingBeam>
     </div>
   );
 };

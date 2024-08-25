@@ -4,25 +4,19 @@ import { config } from "@/config";
 import { signOgImageUrl } from "@/lib/og-image";
 import Markdown from "react-markdown";
 
-const content = `# About Me
-
+const content = `
 ![Rahul](https://imagedelivery.net/lLmNeOP7HXG0OqaG97wimw/clvlugru90000o4g8ahxp069s/db7abbe3-aa5c-433e-a16d-cbf137d1c9e5.png/public)
 
-Hey there! I'm Rahul, a 28-year-old former corporate warrior who decided to ditch the 9-to-5 grind and embark on an adventure of a lifetime. After years of hustling in a high-pressure job, I realized that life is too short to be stuck in an office, staring at spreadsheets all day.
+Hello! I'm Rahul, a passionate traveler, adventurer, and self-taught programmer hailing from the small town of Kekri in Rajasthan. My journey has been a blend of academic pursuits and soul-stirring adventures, shaped by the diverse landscapes and cultures of India. Raised in a family that cherished the spirit of exploration, I inherited my father’s love for travel and a deep-seated curiosity to discover the unknown.
 
-So I took a leap of faith, quit my cushy job in Singapore, and decided to see the world on my own terms. No more stuffy meetings or rigid schedules – just me, my backpack, and an open road ahead.
+My formal education took me through the bustling streets of Kota, where I prepared for IIT JEE and secured a spot at LNMIIT, Jaipur. However, the most valuable lessons I’ve learned came from beyond the classroom. With a camera in hand and a heart full of wanderlust, I’ve roamed the deserts of Rajasthan, captured the vibrant festivals, and scaled the serene heights of the Himalayas. Each journey, whether solo or with companions, has been meticulously planned, focusing on crafting experiences that turn into lifelong memories.
 
-![Rahul](https://imagedelivery.net/lLmNeOP7HXG0OqaG97wimw/clvlugru90000o4g8ahxp069s/6b080e65-2329-4a36-ad5c-0a6af8d9aeb1.png/public)
+In parallel to my adventures, I’ve immersed myself in the world of coding. For the past two years, I’ve been a self-taught programmer, often finding inspiration in the quiet hours of the night. My passion for development is fueled by a desire to build meaningful applications that make an impact. I’m currently seeking an exciting software development opportunity, ideally in a startup environment where I can contribute and grow, blending my technical skills with my creative drive.
 
-This blog is where I'll be documenting my travels, sharing my experiences, and hopefully inspiring others to follow their wanderlust. From trekking through remote villages to savoring local cuisines, I'm on a mission to immerse myself in different cultures and create memories that will last a lifetime.
+![Rahul](https://imagedelivery.net/lLmNeOP7HXG0OqaG97wimw/clvlugru90000o4g8ahxp069s/db7abbe3-aa5c-433e-a16d-cbf137d1c9e5.png/public)
+My ideology is simple: life is a collection of stories waiting to be told. Whether it’s through code or a camera lens, I’m here to capture every moment, every experience, and share it with the world. I believe that every trip, every line of code, and every adventure is a step towards creating something beautiful and unforgettable.
 
-But this journey isn't just about checking off destinations from a bucket list. It's about self-discovery, personal growth, and finding the courage to live life on my own terms. I'll be honest and raw, sharing the highs and lows, the moments of pure bliss and the inevitable challenges that come with solo travel.
-
-So join me on this adventure, and let's explore the world together! Who knows, maybe my stories will inspire you to take that leap of faith and pursue your own dreams, whatever they may be.
-
-Let's go on an adventure!
-
-Love,
+Let's get connected!
 
 Rahul`;
 
@@ -47,7 +41,7 @@ export async function generateMetadata() {
 const Page = async () => {
   return (
     <div className="container mx-auto px-5">
-      <Header />
+      <Header title={"About Me"} />
       <div className="prose lg:prose-lg dark:prose-invert m-auto mt-20 mb-10 blog-content">
         <Markdown>{content}</Markdown>
       </div>

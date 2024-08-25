@@ -88,8 +88,7 @@ const CareerSection: React.FC = () => {
   return (
     <section
       ref={sectionRef}
-      className={`min-h-screen bg-gradient-to-br from-gray-900 to-gray-800 text-white pt-4 pb-4 px-4 overflow-hidden transition-opacity duration-1000 snap-start flex items-center justify-center ${
-        isVisible ? "opacity-100" : "opacity-0 bg-gray-900"
+      className={`min-h-screen bg-gradient-to-br from-gray-900 to-gray-800 text-white pt-4 pb-4 px-4 overflow-hidden snap-start flex items-center justify-center "
       }`}
       id="passion-profession"
     >

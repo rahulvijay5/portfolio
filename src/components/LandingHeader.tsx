@@ -6,6 +6,8 @@ import { motion } from "framer-motion";
 import { ArrowDownCircle } from "lucide-react";
 import { NeonGradientCard } from "./magicui/neon-gradient-card";
 import ShinyButton from "./magicui/shiny-button";
+import DarkModeToggleText from "./DarkModeToggleText";
+import WordRotate from "./magicui/word-rotate";
 
 const DownloadResume = () => (
   <motion.a
@@ -23,7 +25,7 @@ const DownloadResume = () => (
 
 const LandingHeader: React.FC = () => {
   return (
-    <section className="min-h-screen flex items-center justify-center text-black  dark:text-white py-20 px-4 sm:px-6 lg:px-8">
+    <section className="min-h-screen flex items-center justify-center text-black  dark:text-white pt-20 pb-10 px-4 sm:px-6 lg:px-8 w-full">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <motion.div
@@ -40,11 +42,11 @@ const LandingHeader: React.FC = () => {
             </h1>
             <p className="text-xl text-black dark:text-gray-300 leading-relaxed">
               A self-taught programmer with a passion for development. For the
-              past two years, I&apos;ve been immersing myself in the world of coding,
-              often finding inspiration in the middle of the night. I&apos;m
-              currently seeking an exciting software development opportunity,
-              preferably in a startup environment where I can contribute and
-              grow.
+              past two years, I&apos;ve been immersing myself in the world of
+              coding, often finding inspiration in the middle of the night.
+              I&apos;m currently seeking an exciting software development
+              opportunity, preferably in a startup environment where I can
+              contribute and grow.
             </p>
             <div className="flex items-center space-x-4">
               <DownloadResume />
@@ -75,6 +77,20 @@ const LandingHeader: React.FC = () => {
               />
             </NeonGradientCard>
           </motion.div>
+        </div>
+        <div className="dark:hidden block mt-16 select-none w-full">
+          <div className="md:flex-row flex flex-col items-center gap-1 md:gap-0  justify-center">
+            <span className="text-2xl font-bold mr-3">
+              <WordRotate
+                className="text-2xl font-bold text-black dark:text-white"
+                words={["Programmer?", "Engineer?","Developer?"]}
+              />
+            </span>
+            then Better be seen this in <DarkModeToggleText />
+          </div>
+          <span className="text-sm text-muted-foreground flex items-center mt-2 justify-center">
+            Otherwise Continue...
+          </span>
         </div>
       </div>
     </section>
