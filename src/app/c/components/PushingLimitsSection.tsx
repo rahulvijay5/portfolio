@@ -1,6 +1,7 @@
 import React from "react";
 import { Mountain, Users, Backpack, Recycle } from "lucide-react";
 import Image from "next/image";
+import { pushingLimitsSectionImage } from "@/lib/constants";
 
 const PushingLimitsSection: React.FC = () => {
   return (
@@ -64,44 +65,11 @@ const PushingLimitsSection: React.FC = () => {
 
           {/* Sidebar */}
           <div className="space-y-6">
-            {/* <div className="bg-white bg-opacity-80 backdrop-blur-sm rounded-lg shadow-lg p-6">
-              <h2 className="text-2xl font-bold text-green-800 mb-4">Adventure Highlights</h2>
-              <ul className="space-y-4">
-                <li className="flex items-start">
-                  <Mountain className="w-6 h-6 text-blue-600 mr-2 flex-shrink-0" />
-                  <span>Conquered Mount Abu despite sleepless nights</span>
-                </li>
-                <li className="flex items-start">
-                  <Users className="w-6 h-6 text-green-600 mr-2 flex-shrink-0" />
-                  <span>Organized successful group expeditions</span>
-                </li>
-                <li className="flex items-start">
-                  <Backpack className="w-6 h-6 text-yellow-600 mr-2 flex-shrink-0" />
-                  <span>15-day Meghalaya trip with just a 20L backpack</span>
-                </li>
-                <li className="flex items-start">
-                  <Recycle className="w-6 h-6 text-purple-600 mr-2 flex-shrink-0" />
-                  <span>Completed multiple zero-waste expeditions</span>
-                </li>
-              </ul>
-            </div> */}
-
-            {/* <div className="bg-gradient-to-r from-green-500 to-blue-500 rounded-lg shadow-lg p-6 text-white">
-              <h3 className="text-xl font-bold mb-2">Next Adventure</h3>
-              <p className="mb-4">Planning a sustainable trek through the Himalayas. Join me on this eco-friendly expedition!</p>
-              <button className="bg-white text-green-600 px-4 py-2 rounded-full font-semibold hover:bg-opacity-90 transition duration-300">
-                Learn More
-              </button>
-            </div> */}
             <div className="w-full h-full relative">
               <Image
-                src={
-                  "https://images.unsplash.com/photo-1724179016304-972febc1cc43?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?height=600&width=800&text=Photo+1"
-                }
+                src={pushingLimitsSectionImage}
                 alt="waste collected"
-                // layout="fill"
-                width={500}
-                height={500}
+                fill
                 className="object-cover h-full w-full rounded-t-lg"
               />
             </div>

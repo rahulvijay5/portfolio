@@ -1,12 +1,6 @@
 import React from 'react';
 import { Instagram, Camera, Video, Users, Edit, ArrowUpRightIcon } from 'lucide-react';
-
-const socialAccounts = [
-  { name: '@travel_the_worldd', followers: '10K+' },
-  { name: '@mumbai_tales', followers: '5K+' },
-  { name: '@desportivos.lnmiit', followers: '3K+' },
-  { name: '@imagination.lnmiit', followers: '2K+' },
-];
+import { socialAccounts } from '@/lib/constants';
 
 const ContentCreatorSection: React.FC = () => {
   return (

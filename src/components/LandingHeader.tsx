@@ -11,8 +11,9 @@ import WordRotate from "./magicui/word-rotate";
 
 const DownloadResume = () => (
   <motion.a
-    href="/path-to-your-resume.pdf"
+    href="https://pub-820e71ce4d574173a723b481ca8f19c7.r2.dev/1724572705386-Rahul_Resume_short.pdf"
     download
+    target="_blank"
     whileHover={{ scale: 1.05 }}
     whileTap={{ scale: 0.95 }}
   >
@@ -43,10 +44,9 @@ const LandingHeader: React.FC = () => {
             <p className="text-xl text-black dark:text-gray-300 leading-relaxed">
               A self-taught programmer with a passion for development. For the
               past two years, I&apos;ve been immersing myself in the world of
-              coding, often finding inspiration in the middle of the night.
-              I&apos;m currently seeking an exciting software development
-              opportunity, preferably in a startup environment where I can
-              contribute and grow.
+              programming, often finding inspiration in the middle of the night.
+              I&apos;m open to work right now, preferably in a startup environment where I can
+              contribute and grow and build tech products for the world..
             </p>
             <div className="flex items-center space-x-4">
               <DownloadResume />

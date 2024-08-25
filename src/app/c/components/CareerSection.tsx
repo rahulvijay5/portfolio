@@ -1,5 +1,6 @@
 "use client";
 
+import { careerSectionSkills } from "@/lib/constants";
 import React, { useState, useEffect, useRef } from "react";
 
 const CareerSection: React.FC = () => {
@@ -26,64 +27,7 @@ const CareerSection: React.FC = () => {
     };
   }, []);
 
-  const skills = [
-    {
-      name: "Trekking and Adventures",
-      icon: "🗻",
-      color: "bg-indigo-500",
-      description:
-        "Experienced in leading groups through challenging terrains while ensuring safety and enjoyment.",
-    },
-    {
-      name: "Travel Planning",
-      icon: "🗺️",
-      color: "bg-blue-500",
-      description:
-        "Expert in crafting unforgettable journeys tailored to individual preferences and budgets.",
-    },
-    {
-      name: "Content Creation",
-      icon: "📸",
-      color: "bg-purple-500",
-      description:
-        "Skilled in producing engaging travel content across various platforms, from photography to written articles.",
-    },
-    {
-      name: "Web Development",
-      icon: "💻",
-      color: "bg-green-500",
-      description:
-        "Coding the future, one line at a time. Building responsive and interactive web experiences.",
-    },
-    {
-      name: "Figma & Framer",
-      icon: "🎨",
-      color: "bg-pink-500",
-      description:
-        "Crafting digital experiences with precision and creativity, from wireframes to high-fidelity prototypes.",
-    },
-    {
-      name: "No-Code Tools",
-      icon: "🛠️",
-      color: "bg-yellow-500",
-      description:
-        "Building powerful applications with speed and efficiency, leveraging the latest no-code platforms.",
-    },
-    {
-      name: "Lightroom & </br> Premiere Pro",
-      icon: "🎬",
-      color: "bg-red-500",
-      description:
-        "Transforming raw photos and videos into captivating stories that inspire wanderlust.",
-    },
-    {
-      name: "Effective Traveling",
-      icon: "✈️",
-      color: "bg-teal-500",
-      description:
-        "Navigating the globe with confidence and a strategic mind, maximizing experiences while minimizing hassles.",
-    },
-  ];
+  
 
   return (
     <section
@@ -125,7 +69,7 @@ const CareerSection: React.FC = () => {
               </div>
             </div>
             <div className="grid grid-cols-2 gap-4 animate-fade-in-right">
-              {skills.map((skill) => (
+              {careerSectionSkills.map((skill) => (
                 <div
                   key={skill.name}
                   className={`${skill.color} p-4 rounded-lg shadow-lg cursor-pointer transition-all duration-300 transform hover:scale-105 hover:rotate-3`}
@@ -151,7 +95,7 @@ const CareerSection: React.FC = () => {
           >
             <h3 className="text-2xl font-bold mb-4">{activeSkill}</h3>
             <p className="text-lg mb-4">
-              {skills.find((skill) => skill.name === activeSkill)?.description}
+              {careerSectionSkills.find((skill) => skill.name === activeSkill)?.description}
             </p>
             <button
               className="bg-gray-900 text-white py-2 px-4 rounded-full font-semibold"

@@ -47,7 +47,7 @@ const Loading: React.FC = () => {
             {[...Array(3)].map((_, index) => (
               <motion.div
                 key={index}
-                className="absolute inset-0 border-4 border-blue-300 dark:border-blue-200 rounded-full"
+                className="absolute inset-0 border-4 border-blue-500 dark:border-blue-200 rounded-full"
                 style={{
                   borderLeftColor: 'transparent',
                   borderRightColor: 'transparent',
@@ -65,7 +65,7 @@ const Loading: React.FC = () => {
               initial={{ scale: 0.5, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               transition={{ duration: 0.5 }}
-              className="text-6xl sm:text-7xl md:text-8xl font-bold text-blue-400 dark:text-blue-200"
+              className="text-6xl sm:text-7xl md:text-8xl font-bold text-blue-600 dark:text-blue-200"
             >
               {count}
             </motion.div>

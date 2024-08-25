@@ -2,26 +2,6 @@ import Image from "next/image";
 import React from "react";
 
 const ExploredTerritoriesSection: React.FC = () => {
-  const locations = [
-    "Ladakh",
-    "Dharamshala",
-    "Dalhousie",
-    "Manali",
-    "Kullu",
-    "Mussoorie",
-    "Harsil",
-    "Utarkashi",
-    "Dehradun",
-    "Rishikesh",
-    "Nainital",
-    "Pokhra",
-    "Kathmandu",
-    "Gangtok",
-    "Darjeeling",
-    "Guwahati",
-    "Shillong",
-    "Cherrapunji",
-  ];
 
 //   if wanted to use google maps someday then:
 

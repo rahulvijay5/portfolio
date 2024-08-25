@@ -1,35 +1,3 @@
-// import Image from "next/image";
-// import React from "react";
-
-// const MainHeader: React.FC = () => {
-//   const demoUrl =
-//     "https://images.unsplash.com/photo-1723341716427-e2c3ccdbade2?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
-
-//   return (
-//     <header className="relative h-full w-full snap-start" id="header">
-//       <Image
-//         src={demoUrl}
-//         alt="Banner Image"
-//         //   layout="fill"
-//         objectFit="cover"
-//         className="h-full w-full"
-//         width={600}
-//         height={400}
-//       />
-//       <div className="absolute inset-0  flex top-10 md:top-0 items-start justify-center">
-//         <div className="bg-white/30 rounded-b-md p-12 flex items-center justify-center flex-col gap-4">
-//           <h1 className="text-black text-5xl font-bold font-onefont">Rahul</h1>
-//           <h1 className="text-black text-xl font-semibold font-onefont text-center">
-//             Traveler | Photographer | Adventurer
-//           </h1>
-//         </div>
-//       </div>
-//     </header>
-//   );
-// };
-
-// export default MainHeader;
-
 "use client";
 
 import React, { useState, useEffect } from "react";
@@ -61,11 +29,8 @@ const BannerComponent: React.FC = () => {
       <Image
         src="https://pub-820e71ce4d574173a723b481ca8f19c7.r2.dev/header.JPG?height=1080&width=1920&text=Captivating+Landscape"
         alt="Header image for rahul's portfolio site"
-        // layout="fill"
         priority
-        width={500}
-        height={500}
-        // objectFit="cover"
+        fill
         className={`transition-opacity w-full h-full object-cover duration-1000 ${
           isLoaded ? "opacity-60" : "opacity-0"
         }`}

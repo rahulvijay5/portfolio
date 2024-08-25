@@ -13,11 +13,11 @@ const page = () => {
           quantity={100}
         />
         <div className="flex flex-col items-center justify-center">
-          <h3 className="text-md duration-500 text-zinc-300 hover:text-zinc-400">
+          <h3 className="text-md duration-500 text-zinc-300 hover:text-zinc-400 font-mono">
             Hey there, I am
           </h3>
 
-          <h1 className="py-3.5 z-10 text-6xl text-transparent duration-1000 bg-white cursor-default text-edge-outline animate-title font-display sm:text-6xl md:text-9xl whitespace-nowrap relative font-extrabold bg-clip-text">
+          <h1 className="py-3.5 z-10 text-6xl text-transparent duration-1000 bg-white text-edge-outline animate-title font-display sm:text-6xl md:text-9xl whitespace-nowrap relative font-extrabold bg-clip-text cursor-none">
             <span className="hover:text-red-200 transition-all duration-500">
               r
             </span>

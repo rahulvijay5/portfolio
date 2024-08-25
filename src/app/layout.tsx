@@ -5,6 +5,8 @@ import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { Toaster } from "@/components/ui/toaster"
+import { Toast } from "@/components/ui/toast";
 // import { DockToUse } from "@/components/Dock";
 
 const fontSans = Inter({ subsets: ["latin"], variable: "--font-sans" });
@@ -52,6 +54,7 @@ export default function RootLayout({
           <main>
             {children}
           </main>
+          <Toaster/>
         </ThemeProvider>
       </body>
     </html>

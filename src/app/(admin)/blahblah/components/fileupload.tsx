@@ -6,7 +6,7 @@ import { RefreshCcwIcon } from "lucide-react";
 import { useRouter } from "next/navigation";
 import React, { useState } from "react";
 
-const ImageUpload = () => {
+const ImageUpload = ({disabled}:{disabled:true | false}) => {
   const [imageUrl, setImageUrl] = useState<string | null>(null);
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [error, setError] = useState<string | null>(null);
@@ -59,6 +59,7 @@ const ImageUpload = () => {
       </h1>
       <Input
         type="file"
+        disabled = {disabled}
         onChange={handleImageUpload}
         className="border rounded-md cursor-pointer p-8 h-full w-full flex items-center justify-center mb-4 text-center hover:shadow-sm"
       />

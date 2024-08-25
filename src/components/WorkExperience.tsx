@@ -1,65 +1,24 @@
 import { FunctionComponent } from "react";
 import { format } from "date-fns";
-
-type Experience = {
-  title: string;
-  company: string;
-  location: string;
-  startDate: Date;
-  endDate: Date | null;
-  description: string;
-};
-
-type Education = {
-  degree: string;
-  institution: string;
-  location: string;
-  startDate: Date;
-  endDate: Date | null;
-  description: string;
-};
-
-const experiences: Experience[] = [
-  {
-    title: "Software Engineer",
-    company: "Tech Corp",
-    location: "San Francisco, CA",
-    startDate: new Date(2021, 5, 1),
-    endDate: new Date(2023, 4, 30),
-    description:
-      "Developed and maintained web applications using React and Node.js. Led a team of junior developers and implemented CI/CD pipelines.",
-  },
-  {
-    title: "Junior Developer",
-    company: "Web Solutions",
-    location: "New York, NY",
-    startDate: new Date(2019, 8, 1),
-    endDate: new Date(2021, 4, 30),
-    description:
-      "Worked on front-end development with a focus on responsive design and performance optimization. Contributed to the development of internal tools and applications.",
-  },
-];
-
-const education: Education[] = [
-  {
-    degree: "Bachelor of Science in Computer Science",
-    institution: "XYZ University",
-    location: "Los Angeles, CA",
-    startDate: new Date(2015, 8, 1),
-    endDate: new Date(2019, 5, 1),
-    description:
-      "Specialized in software engineering and data structures. Completed a capstone project on machine learning algorithms.",
-  },
-];
+import { education, experiences } from "@/lib/constants";
 
 const TimelineItem: FunctionComponent<{
   title: string;
   organization: string;
   location: string;
   startDate: Date;
-  endDate: Date | null;
+  endDate?: Date | null;
+  info?: string;
   description: string;
-}> = ({ title, organization, location, startDate, endDate, description }) => {
+}> = ({
+  title,
+  organization,
+  location,
+  startDate,
+  endDate,
+  description,
+  info,
+}) => {
   return (
     <div className="relative mb-8 pl-4 md:pl-8">
       <div className="absolute top-0 py-6 left-0 h-full w-1 bg-gray-200"></div>
@@ -68,10 +27,13 @@ const TimelineItem: FunctionComponent<{
         <div className="">
           <h3 className="text-xl font-semibold">{title}</h3>
           <p className="text-gray-600">{organization}</p>
-          <p className="text-gray-600">
-            {location} | {format(startDate, "MMM yyyy")} -{" "}
-            {endDate ? format(endDate, "MMM yyyy") : "Present"}
-          </p>
+          <div className="flex justify-between items-center w-full">
+            <div className="text-gray-600">
+              {location} | {format(startDate, "MMM yyyy")} -{" "}
+              {endDate ? format(endDate, "MMM yyyy") : "Present"}
+            </div>
+            <p className="text-gray-600">{info ? info : ""}</p>
+          </div>
           <p className="mt-2">{description}</p>
         </div>
       </div>
@@ -113,6 +75,7 @@ const EducationSection: FunctionComponent = () => {
             location={edu.location}
             startDate={edu.startDate}
             endDate={edu.endDate}
+            info={edu.info}
             description={edu.description}
           />
         ))}

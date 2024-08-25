@@ -1,9 +1,8 @@
+import { demoUrl } from "@/lib/constants";
 import Image from "next/image";
 import React from "react";
 
 const DiscovererOfHiddenGems = () => {
-  const backgroundImageUrl =
-    "https://images.unsplash.com/photo-1724179016304-972febc1cc43?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?height=600&width=800&text=Photo+1"; // Placeholder URL
 
   return (
     <section
@@ -16,7 +15,7 @@ const DiscovererOfHiddenGems = () => {
       </h2>
       <div className="relative mt-12 h-full w-full">
       <Image
-        src={backgroundImageUrl}
+        src={demoUrl}
         width={1000}
         height={200}
         className="z-0 absolute w-full h-48"

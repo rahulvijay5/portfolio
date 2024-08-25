@@ -75,11 +75,11 @@ export const StickyScroll = ({
           backgroundColor:
             backgroundColors[activeCard % backgroundColors.length],
         }}
-        className="h-[80vh] sm:h-[65vh] w-5xl overflow-y-auto flex justify-between relative space-x-10 rounded-md"
+        className="h-[90vh] sm:h-[65vh] w-5xl overflow-y-auto flex justify-between relative space-x-10 rounded-md"
         ref={ref}
       >
         <div className="div relative md:w-1/2 flex items-start">
-          <div className="w-full">
+          <div className="w-full h-full">
             {content.map((item, index) => (
               <div key={item.title + index} className="my-20">
                 <motion.h2
@@ -145,7 +145,7 @@ export const StickyScroll = ({
                 </motion.div>
               </div>
             ))}
-            {/* <div className="h-48" /> */}
+            <div className="h-12" />
           </div>
         </div>
         <div

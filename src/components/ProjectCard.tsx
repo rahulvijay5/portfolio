@@ -1,16 +1,8 @@
 // components/ProjectCard.tsx
 
+import { ProjectCardProps } from "@/lib/types";
 import Image from "next/image";
 import Link from "next/link";
-
-interface ProjectCardProps {
-  title: string;
-  description: string;
-  technologies: string[];
-  liveLink?: string;
-  repoLink?: string;
-  imageUrl: string;
-}
 
 const ProjectCard: React.FC<ProjectCardProps> = ({
   title,

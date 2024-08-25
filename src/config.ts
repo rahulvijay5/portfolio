@@ -7,7 +7,10 @@ const buildConfig = () => {
     process.env.NEXT_DEFAULT_METADATA_DEFAULT_TITLE || "Rahul Vijay";
   const defaultDescription =
     process.env.NEXT_PUBLIC_BLOG_DESCRIPTION ||
-    "Personal Site about Code, Travel and Lifestyle.";
+    "Personal Site about Code, Travel and Life.";
+    const ogImageUrl =
+    process.env.NEXT_PUBLIC_OG_IMAGE_URL ||
+    `${process.env.NEXT_PUBLIC_BASE_URL}/static/og-image.jpg`;
 
   return {
     baseUrl: process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000",
@@ -26,6 +29,7 @@ const buildConfig = () => {
     ogImageSecret:
       process.env.OG_IMAGE_SECRET ||
       "secret_used_for_signing_and_verifying_the_og_image_url",
+      ogImage: ogImageUrl,
     wisp: {
       blogId,
     },

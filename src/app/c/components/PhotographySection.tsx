@@ -1,16 +1,12 @@
 "use client";
 
+import { photographySectionImages } from "@/lib/constants";
 import { Camera, Image as ImageIcon, Share2 } from "lucide-react";
 import Image from "next/image";
 import { useState } from "react";
 
 export default function PhotographySection() {
   const [activeImage, setActiveImage] = useState(0);
-  const images = [
-    "https://images.unsplash.com/photo-1724179016304-972febc1cc43?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?height=600&width=800&text=Photo+1",
-    "https://images.unsplash.com/photo-1724180872527-4087c8db6093?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?height=600&width=800&text=Photo+2",
-    "https://images.unsplash.com/photo-1724166647099-7a5b3e686e8f?q=80&w=2671&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?height=600&width=800&text=Photo+3",
-  ];
 
   return (
     <section
@@ -23,7 +19,7 @@ export default function PhotographySection() {
           <div className="lg:w-2/3">
             <div className="relative aspect-video mb-4">
               <Image
-                src={images[activeImage]}
+                src={photographySectionImages[activeImage]}
                 alt={`Featured photograph ${activeImage + 1}`}
                 // layout="fill"
                 width={500}
@@ -35,7 +31,7 @@ export default function PhotographySection() {
               </div>
             </div>
             <div className="flex justify-center gap-4 flex-wrap">
-              {images.map((img, index) => (
+              {photographySectionImages.map((img, index) => (
                 <button
                   key={index}
                   onClick={() => setActiveImage(index)}

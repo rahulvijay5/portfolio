@@ -1,39 +1,7 @@
 import React from "react";
 import IconCloud from "./magicui/icon-cloud";
 import { Button } from "./ui/button";
-
-const slugs = [
-  "typescript",
-  "javascript",
-  "dart",
-  "java",
-  "react",
-  "flutter",
-  "android",
-  "html5",
-  "css3",
-  "nodedotjs",
-  "express",
-  "nextdotjs",
-  "prisma",
-  "amazonaws",
-  "postgresql",
-  "firebase",
-  "nginx",
-  "vercel",
-  "testinglibrary",
-  "jest",
-  "cypress",
-  "docker",
-  "git",
-  "jira",
-  "github",
-  "gitlab",
-  "visualstudiocode",
-  "androidstudio",
-  "sonarqube",
-  "figma",
-];
+import { techSkills } from "@/lib/constants";
 
 function SkillBadge({ skillName }: { skillName: string }) {
   return <Button variant={"secondary"}>{skillName}</Button>;
@@ -53,7 +21,7 @@ const Skills = () => {
             </h3>
             <div className="flex flex-wrap gap-2 mt-2">
               <SkillBadge skillName="NextJs" />
-              <SkillBadge skillName="React" />
+              <SkillBadge skillName="ReactJs" />
               <SkillBadge skillName="TypeScript" />
               {/* Add more primary tech stack badges here */}
             </div>
@@ -78,14 +46,15 @@ const Skills = () => {
             <div className="flex flex-wrap gap-2 mt-2">
               <SkillBadge skillName="GitHub" />
               <SkillBadge skillName="VSCode" />
-              <SkillBadge skillName="Bootstrap" />
+              <SkillBadge skillName="Cloudflare" />
+              <SkillBadge skillName="Vercel" />
               {/* Add more tools here */}
             </div>
           </div>
         </div>
 
         <div className="flex justify-center items-center p-4 md:p-0">
-          <IconCloud iconSlugs={slugs} />
+          <IconCloud iconSlugs={techSkills} />
         </div>
       </div>
     </section>

@@ -21,6 +21,7 @@ import {
 import SidebarFooter from "./SidebarFooter";
 import AutoImageSlider from "@/components/AutoImageSlider";
 import { HoverEffect } from "@/components/ui/card-hover-effect";
+import { sidebarSections } from "@/lib/constants";
 
 const Sidebar: React.FC = () => {
   const demoUrl =
@@ -46,21 +47,6 @@ const Sidebar: React.FC = () => {
   const toggleSidebar = () => {
     setIsSidebarOpen(!isSidebarOpen);
   };
-  const sections = [
-    { id: "about_me", label: "About Me" },
-    { id: "past_experiences", label: "Past Experiences" },
-    { id: "adventurer", label: "I am an Adventurer" },
-    { id: "traveler", label: "I am a Traveler" },
-    { id: "storyteller", label: "I am a Storyteller" },
-    { id: "photographer", label: "I am a Photographer" },
-    { id: "content_creator", label: "Content Creation" },
-    { id: "pushing_limits", label: "Pushing the limits" },
-    { id: "terrioties", label: "Explored Territories" },
-    { id: "passion-profession", label: "Passion = Career?" },
-    { id: "testimonials", label: "What others say?" },
-    { id: "bucket-list", label: "Bucket List" },
-    { id: "contact", label: "Let's Connect" },
-  ];
   return (
     <>
       {/* Sidebar for Desktop */}
@@ -78,7 +64,7 @@ const Sidebar: React.FC = () => {
             interval={30000} // Optional: change interval
           />
         </Link>
-        <HoverEffect items={sections} />
+        <HoverEffect items={sidebarSections} />
         <div>
           <SidebarFooter />
         </div>
@@ -122,7 +108,7 @@ const Sidebar: React.FC = () => {
           />
         </Link>
         <ul className="py-4">
-          {sections.map((section) => (
+          {sidebarSections.map((section) => (
             <li key={section.id} className="mb-2">
               <Link
                 href={`#${section.id}`}
