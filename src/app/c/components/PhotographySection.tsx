@@ -10,7 +10,7 @@ export default function PhotographySection() {
 
   return (
     <section
-      className=" text-black md:h-screen py-16 px-4 font-sans snap-start  dark:bg-gray-900 flex items-center justify-center"
+      className=" text-black md:h-screen py-16 px-4 font-sans md:snap-start  dark:bg-gray-900 flex items-center justify-center"
       id="photographer"
     >
       <div className="max-w-6xl mx-auto">

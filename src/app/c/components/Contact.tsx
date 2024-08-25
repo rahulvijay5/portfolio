@@ -10,7 +10,7 @@ export function ContactPage({ purpose }: { purpose: "t" | "c" }) {
     // for create page contact section.
     return (
       <div
-        className="h-screen bg-white dark:bg-gradient-to-bl dark:from-gray-800 dark:to-gray-900 text-gray-900  dark:text-gray-100 transition-colors duration-300 font-serif flex items-center justify-center snap-start"
+        className="h-screen bg-white dark:bg-gradient-to-bl dark:from-gray-800 dark:to-gray-900 text-gray-900  dark:text-gray-100 transition-colors duration-300 font-serif flex items-center justify-center md:snap-start"
         id="contact"
       >
         <div className="container mx-auto px-4 py-4 md:py-8">
@@ -84,7 +84,7 @@ export function ContactPage({ purpose }: { purpose: "t" | "c" }) {
               >
                 My Blogs <ArrowUpRight className="w-3 h-3" />
               </Link>
-              or visit the 
+              or visit the
               <Link
                 href="/t"
                 className="text-xl hover:text-indigo-600 dark:hover:text-indigo-400 hover:scale-105 transition-colors duration-200 flex"
@@ -98,11 +98,10 @@ export function ContactPage({ purpose }: { purpose: "t" | "c" }) {
       </div>
     );
   } else {
-    
     // for tech page contact section.
     return (
       <div
-        className="h-screen text-gray-900 dark:text-gray-100 transition-colors duration-300 font-serif flex items-center justify-center snap-start"
+        className="h-screen text-gray-900 dark:text-gray-100 transition-colors duration-300 font-serif flex items-center justify-center md:snap-start"
         id="contact"
       >
         <div className="container mx-auto px-4 py-4 md:py-8">
@@ -150,11 +149,13 @@ export function ContactPage({ purpose }: { purpose: "t" | "c" }) {
               <div>
                 <h2 className="text-lg font-semibold mb-2">Socials</h2>
                 <div className="grid grid-cols-2 items-center gap-2 justify-center">
-                {Object.entries(socialHandles).map(([name, social]) => (
+                  {Object.entries(socialHandles).map(([name, social]) => (
                     <Link
                       key={name}
                       href={social.url}
-                      className={`block text-xl font-light ${name=="Email" ? "hidden" : ""} hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors duration-300`}
+                      className={`block text-xl font-light ${
+                        name == "Email" ? "hidden" : ""
+                      } hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors duration-300`}
                     >
                       {social.name}
                     </Link>
@@ -176,7 +177,7 @@ export function ContactPage({ purpose }: { purpose: "t" | "c" }) {
               >
                 My Blogs <ArrowUpRight className="w-3 h-3" />
               </Link>
-              or visit the 
+              or visit the
               <Link
                 href="/c"
                 className="text-xl hover:text-indigo-600 dark:hover:text-indigo-400 hover:scale-105 transition-colors duration-200 flex"

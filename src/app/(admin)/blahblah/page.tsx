@@ -73,7 +73,7 @@ export default function App() {
           <p className="group text-xl mb-8 mx-8 group-hover:text-red-600 hover:font-bold transition-all duration-150">
             Kindly{" "}
             <span className="font-bold group-hover:text-4xl transition-all duration-500 group-hover:text-red-600">
-              don't
+              don&apos;t
             </span>{" "}
             use this, this page is for Rahul only.
           </p>

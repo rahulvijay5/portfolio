@@ -6,7 +6,7 @@ import { pushingLimitsSectionImage } from "@/lib/constants";
 const PushingLimitsSection: React.FC = () => {
   return (
     <section
-      className="md:h-screen bg-gradient-to-br from-green-100 to-blue-100 dark:from-gray-900 dark:to-gray-800 p-4 md:p-8 overflow-hidden font-sans snap-start flex items-center justify-center"
+      className="md:h-screen bg-gradient-to-br from-green-100 to-blue-100 dark:from-gray-900 dark:to-gray-800 p-4 md:p-8 overflow-hidden font-sans md:snap-start flex items-center justify-center"
       id="pushing_limits"
     >
       <div className="max-w-7xl mx-auto h-full flex flex-col">
@@ -24,10 +24,11 @@ const PushingLimitsSection: React.FC = () => {
           <div className="md:col-span-2 flex flex-col justify-end space-y-6">
             <div className="bg-white dark:bg-gray-800  bg-opacity-80 backdrop-blur-sm rounded-lg shadow-lg p-6 transform transition duration-500 hover:scale-105">
               <p className="text-gray-700 dark:text-white leading-relaxed">
-                Adventure isn&apos;t just a word; it&apos;s a way of life. Whether it&apos;s
-                enduring continous 4 sleepless nights on a trip to Mount Abu or
-                surviving on just bread and jam in the remote Khasi hills, I&apos;ve
-                always gone to extreme lengths to make every journey worthwhile.
+                Adventure isn&apos;t just a word; it&apos;s a way of life.
+                Whether it&apos;s enduring continous 4 sleepless nights on a
+                trip to Mount Abu or surviving on just bread and jam in the
+                remote Khasi hills, I&apos;ve always gone to extreme lengths to
+                make every journey worthwhile.
               </p>
             </div>
 
@@ -56,8 +57,8 @@ const PushingLimitsSection: React.FC = () => {
                   Zero Waste Expeditions
                 </h3>
                 <p className="text-sm">
-                  Committed to leaving no trace, I&apos;ve successfully completed
-                  some of the best zero-waste trips and expeditions.
+                  Committed to leaving no trace, I&apos;ve successfully
+                  completed some of the best zero-waste trips and expeditions.
                 </p>
               </div>
             </div>

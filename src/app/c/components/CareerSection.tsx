@@ -27,12 +27,10 @@ const CareerSection: React.FC = () => {
     };
   }, []);
 
-  
-
   return (
     <section
       ref={sectionRef}
-      className={`min-h-screen bg-gradient-to-br from-gray-900 to-gray-800 text-white pt-4 pb-4 px-4 overflow-hidden snap-start flex items-center justify-center "
+      className={`min-h-screen bg-gradient-to-br from-gray-900 to-gray-800 text-white pt-4 pb-4 px-4 overflow-hidden md:snap-start flex items-center justify-center "
       }`}
       id="passion-profession"
     >
@@ -95,7 +93,10 @@ const CareerSection: React.FC = () => {
           >
             <h3 className="text-2xl font-bold mb-4">{activeSkill}</h3>
             <p className="text-lg mb-4">
-              {careerSectionSkills.find((skill) => skill.name === activeSkill)?.description}
+              {
+                careerSectionSkills.find((skill) => skill.name === activeSkill)
+                  ?.description
+              }
             </p>
             <button
               className="bg-gray-900 text-white py-2 px-4 rounded-full font-semibold"

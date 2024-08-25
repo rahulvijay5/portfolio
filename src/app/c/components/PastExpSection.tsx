@@ -13,11 +13,14 @@ const PastExperiences: React.FC = () => {
     "7 people",
     "8 people",
     "11 people",
-    "50+ people"
+    "50+ people",
   ];
 
   return (
-    <section className="py-16 px-4 md:px-8 bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 snap-start flex items-center justify-center h-screen" id="past_experiences">
+    <section
+      className="py-16 px-4 md:px-8 bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 md:snap-start flex items-center justify-center h-screen"
+      id="past_experiences"
+    >
       <div className="max-w-4xl mx-auto">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
@@ -84,7 +87,7 @@ const PastExperiences: React.FC = () => {
           className="mt-12 text-center"
         >
           <p className="text-xl md:text-2xl font-serif italic text-gray-700 dark:text-gray-300">
-          &quot;Crafting trips, curating lifelong memories.&quot;
+            &quot;Crafting trips, curating lifelong memories.&quot;
           </p>
         </motion.div>
       </div>

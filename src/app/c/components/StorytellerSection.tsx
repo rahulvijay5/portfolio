@@ -15,7 +15,7 @@ const StorytellerSection: React.FC = () => {
   return (
     <>
       <section
-        className="min-h-screen bg-amber-50 dark:bg-gray-900 snap-start py-16 px-4 flex items-center justify-center"
+        className="min-h-screen bg-amber-50 dark:bg-gray-900 md:snap-start py-16 px-4 flex items-center justify-center"
         id="storyteller"
       >
         <div className="max-w-6xl w-full">
@@ -33,8 +33,8 @@ const StorytellerSection: React.FC = () => {
               <p className="text-lg mb-6 leading-relaxed text-gray-700 dark:text-gray-300 font-serif">
                 My life is a treasure trove of stories, each one more
                 fascinating than the last. From the bustling streets of Mathura
-                during Holi to the serene beauty of Meghalaya&apos;s Khasi hills,
-                I&apos;ve experienced it all.
+                during Holi to the serene beauty of Meghalaya&apos;s Khasi
+                hills, I&apos;ve experienced it all.
               </p>
               <div className="flex items-center mb-6">
                 <MapPin className="w-6 h-6 text-amber-600 mr-2" />

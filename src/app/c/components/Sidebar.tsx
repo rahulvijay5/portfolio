@@ -50,15 +50,13 @@ const Sidebar: React.FC = () => {
   return (
     <>
       {/* Sidebar for Desktop */}
-      <div className="w-1/6 bg-white dark:bg-gray-900 text-black dark:text-gray-100 snap-start hidden lg:flex h-screen overflow-hidden justify-between flex-col px-8 py-8">
+      <div className="w-1/6 bg-white dark:bg-gray-900 text-black dark:text-gray-100 md:snap-start hidden lg:flex h-screen overflow-hidden justify-between flex-col px-8 py-8">
         <Link
           href={"#main_header"}
           className="h-24 w-24 rounded-lg hover:cursor-none hover:shadow-sm hover:shadow-black hover:backdrop-brightness-50"
         >
           <AutoImageSlider
-            images={[
-              "/images/avatar.png",
-            ]}
+            images={["/images/avatar.png"]}
             altText="Rotating Avatar"
             transitionDuration={1000} // Optional: change transition duration
             interval={30000} // Optional: change interval
@@ -97,11 +95,12 @@ const Sidebar: React.FC = () => {
             : "-translate-x-full"
         } transition-transform duration-300 ease-in-out z-40 w-2/3 max-w-xs flex items-start justify-between flex-col py-8 px-8 lg:hidden`}
       >
-        <Link href={"/"} className="h-24 w-24 rounded-lg hover:cursor-none hover:shadow-sm hover:shadow-black hover:backdrop-brightness-50">
+        <Link
+          href={"/"}
+          className="h-24 w-24 rounded-lg hover:cursor-none hover:shadow-sm hover:shadow-black hover:backdrop-brightness-50"
+        >
           <AutoImageSlider
-            images={[
-              "/images/avatar.png",
-            ]}
+            images={["/images/avatar.png"]}
             altText="Rotating Avatar"
             transitionDuration={1000} // Optional: change transition duration
             interval={30000} // Optional: change interval
