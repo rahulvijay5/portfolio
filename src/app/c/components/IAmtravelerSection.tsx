@@ -5,7 +5,7 @@ import { travelerSectionImages } from "@/lib/constants";
 const TravelerSection: React.FC = () => {
   return (
     <section
-      className={`min-h-screen flex flex-col justify-center items-center p-4 md:p-8 transition-colors duration-300 dark:bg-gray-900 dark:text-white bg-white text-gray-900 md:snap-start`}
+      className={`min-h-screen flex flex-col justify-center items-center p-4 md:p-8 transition-colors duration-300 md:snap-start`}
       id="traveler"
     >
       <div className="max-w-4xl w-full space-y-4">

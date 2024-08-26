@@ -17,10 +17,10 @@ import CrazyBucketList from "./components/BucketList";
 
 const TravelMagazine = () => {
   return (
-    <div className="flex">
+    <div className="flex bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100">
       <Sidebar/>
       
-      <div className="bg-white text-gray-800 w-5/6 flex-1 h-screen overflow-y-auto scroll-smooth snap-y snap-proximity snap-always">  
+      <div className=" w-5/6 flex-1 h-screen overflow-y-auto scroll-smooth snap-y snap-proximity snap-always">  
 
         <MainHeader/>
 

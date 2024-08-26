@@ -20,6 +20,13 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
+import {
+  Sheet,
+  SheetContent,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui/sheet";
 import { Dock, DockIcon } from "@/components/magicui/dock";
 import { DarkModeToggle } from "./DarkModeToggle";
 
@@ -31,13 +38,22 @@ const DATA = {
     { href: "/blog", icon: PencilIcon, label: "Blog" },
   ],
   contact: {
-    socialHandles
+    socialHandles,
   },
 };
 
 import { motion, AnimatePresence } from "framer-motion";
 import { Share2, X } from "lucide-react";
 import { socialHandles } from "@/lib/constants";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuGroup,
+  DropdownMenuItem,
+  DropdownMenuLabel,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from "./ui/dropdown-menu";
 
 export function DockToUse() {
   const [showSocial, setShowSocial] = useState(false);
@@ -74,64 +90,120 @@ export function DockToUse() {
               </DockIcon>
             ))}
 
-            {/* Social links (collapsed on mobile) */}
-            <Tooltip>
-              <TooltipTrigger asChild>
-                <button
-                  onClick={toggleSocial}
-                  className={cn(
-                    buttonVariants({ variant: "ghost", size: "icon" }),
-                    "size-10 sm:size-12 rounded-full"
-                  )}
-                >
-                  {showSocial ? (
-                    <X className="size-4 sm:size-5" />
-                  ) : (
-                    <Share2 className="size-4 sm:size-5" />
-                  )}
-                </button>
-              </TooltipTrigger>
-              <TooltipContent>
-                <p>Social Links</p>
-              </TooltipContent>
-            </Tooltip>
+            <div className="hidden sm:flex items-center">
+              <Tooltip>
+                <TooltipTrigger asChild>
+                  <button
+                    onClick={toggleSocial}
+                    className={cn(
+                      buttonVariants({ variant: "ghost", size: "icon" }),
+                      "size-10 sm:size-12 rounded-full"
+                    )}
+                  >
+                    {showSocial ? (
+                      <X className="size-4 sm:size-5" />
+                    ) : (
+                      <Share2 className="size-4 sm:size-5" />
+                    )}
+                  </button>
+                </TooltipTrigger>
+                <TooltipContent>
+                  <p>Social Links</p>
+                </TooltipContent>
+              </Tooltip>
 
-            {/* Expanded social links */}
-            <AnimatePresence>
-              {showSocial && (
-                <motion.div
-                  initial={{ width: 0, opacity: 0 }}
-                  animate={{ width: "auto", opacity: 1 }}
-                  exit={{ width: 0, opacity: 0 }}
-                  className="flex overflow-hidden"
-                >
-                  <Separator orientation="vertical" className="h-8 mx-2" />
-                  {Object.entries(DATA.contact.socialHandles).map(([name, social]) => (
-                    <Tooltip key={name}>
-                      <TooltipTrigger asChild>
-                        <Link
-                          href={social.url}
-                          target="_blank"
-                          className={cn(
-                            buttonVariants({ variant: "ghost", size: "icon" }),
-                            "size-10 sm:size-12 rounded-full"
-                          )}
-                        >
-                          <social.icon className="size-4 sm:size-5" />
-                        </Link>
-                      </TooltipTrigger>
-                      <TooltipContent>
-                        <p>{name}</p>
-                      </TooltipContent>
-                    </Tooltip>
-                  ))}
-                </motion.div>
-              )}
-            </AnimatePresence>
+              <AnimatePresence>
+                {showSocial && (
+                  <motion.div
+                    initial={{ width: 0, opacity: 0 }}
+                    animate={{ width: "auto", opacity: 1 }}
+                    exit={{ width: 0, opacity: 0 }}
+                    className="flex overflow-hidden"
+                  >
+                    <Separator orientation="vertical" className="h-8 mx-2" />
+                    {Object.entries(DATA.contact.socialHandles).map(
+                      ([name, social]) => (
+                        <Tooltip key={name}>
+                          <TooltipTrigger asChild>
+                            <Link
+                              href={social.url}
+                              target="_blank"
+                              className={cn(
+                                buttonVariants({
+                                  variant: "ghost",
+                                  size: "icon",
+                                }),
+                                "size-10 sm:size-12 rounded-full"
+                              )}
+                            >
+                              <social.icon className="size-4 sm:size-5" />
+                            </Link>
+                          </TooltipTrigger>
+                          <TooltipContent>
+                            <p>{name}</p>
+                          </TooltipContent>
+                        </Tooltip>
+                      )
+                    )}
+                  </motion.div>
+                )}
+              </AnimatePresence>
+            </div>
+
+            {/* Mobile view */}
+            <div className="sm:hidden">
+              <DropdownMenu>
+                <DropdownMenuTrigger asChild>
+                  <button
+                    className={cn(
+                      buttonVariants({ variant: "ghost", size: "icon" }),
+                      "size-10 rounded-full"
+                    )}
+                  >
+                    <Share2 className="size-4" />
+                  </button>
+                </DropdownMenuTrigger>
+                <DropdownMenuContent side="bottom" className="h-[300px]">
+                  <DropdownMenuLabel>Social Links</DropdownMenuLabel>
+                  <DropdownMenuSeparator />
+                  <DropdownMenuGroup>
+                    <div className="mt-4 flex flex-col items-start justify-between h-full gap-2">
+                      {Object.entries(DATA.contact.socialHandles).map(
+                        ([name, social]) => (
+                          <Tooltip key={name}>
+                            <TooltipTrigger asChild>
+                              <Link
+                                href={social.url}
+                                target="_blank"
+                                className={cn(
+                                  buttonVariants({
+                                    variant: "ghost",
+                                    // size: "icon",
+                                  }),
+                                  " w-full items-center flex gap-4 justify-between"
+                                )}
+                              >
+                                <DropdownMenuItem className="w-full">
+                                  <social.icon className="size-4 sm:size-5" />
+                                  {/* <User className="mr-2 h-4 w-4" /> */}
+                                  <span className="ml-3">{social.name}</span>
+                                </DropdownMenuItem>
+                              </Link>
+                            </TooltipTrigger>
+                            <TooltipContent>
+                              <p>{name}</p>
+                            </TooltipContent>
+                          </Tooltip>
+                        )
+                      )}
+                    </div>
+                  </DropdownMenuGroup>
+                </DropdownMenuContent>
+              </DropdownMenu>
+            </div>
 
             {/* Theme toggle */}
             <Separator orientation="vertical" className="h-8 mx-2" />
-
             <DockIcon>
               <Tooltip>
                 <TooltipTrigger asChild>

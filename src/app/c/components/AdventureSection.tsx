@@ -23,7 +23,7 @@ const AdventurerSection: React.FC = () => {
 
   return (
     <section
-      className="h-screen flex items-center justify-center px-4 transition-colors duration-500 bg-white dark:bg-gray-900 md:snap-start"
+      className="h-screen flex items-center justify-center px-4 transition-colors duration-500 md:snap-start"
       id="adventurer"
     >
       <div className="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
@@ -32,7 +32,7 @@ const AdventurerSection: React.FC = () => {
             isVisible ? "opacity-100" : "opacity-0"
           }`}
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white">
+          <h2 className="text-4xl md:text-5xl font-bold">
             I Am an Adventurer
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 italic">
@@ -44,8 +44,8 @@ const AdventurerSection: React.FC = () => {
             I&apos;ve embraced it all. My journeys have taken me to places where
             few dare to tread.
           </p>
-          <div className="bg-gray-100 dark:bg-gray-800 p-4 rounded-lg transition-all duration-1000 delay-300 transform hover:scale-105">
-            <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+          <div className="bg-gray-100 dark:bg-slate-900 p-4 rounded-lg transition-all duration-1000 delay-300 transform hover:scale-105">
+            <h3 className="text-xl font-semibold mb-2">
               {adventureSectionContent[currentAdventure].title}
             </h3>
             <p className="text-gray-600 dark:text-gray-400">

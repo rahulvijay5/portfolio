@@ -13,7 +13,7 @@ const AboutMeSection: React.FC = () => {
 
   return (
     <section
-      className={`min-h-screen flex items-center justify-center p-4 transition-colors duration-500 dark:bg-gray-900 dark:text-white bg-white text-gray-900 md:snap-start`}
+      className={`min-h-screen flex items-center justify-center p-4 transition-colors duration-500 md:snap-start`}
       id="about_me"
     >
       <div className="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
@@ -45,7 +45,7 @@ const AboutMeSection: React.FC = () => {
           ))}
           <button
             onClick={() => setActiveImage((prev) => (prev + 1) % images.length)}
-            className="absolute bottom-4 right-4 bg-white text-gray-900 px-4 py-2 rounded-full shadow-lg z-20 hover:bg-gray-200 transition-colors duration-300"
+            className="absolute bottom-4 right-4 bg-white text-black px-4 py-2 rounded-full shadow-lg z-20 hover:bg-gray-200 transition-colors duration-300"
           >
             Next Image
           </button>

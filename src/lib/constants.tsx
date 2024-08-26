@@ -85,7 +85,7 @@ export const socialHandles = {
     icon: Icons.x,
   },
   Email: {
-    name: "Send Email",
+    name: "Email",
     url: "mailto:rahulviijay@gmail.com",
     icon: Icons.email,
   },
@@ -380,8 +380,7 @@ export const techSkills = [
   "framer",
   "socketdotio",
   "react",
-  "oauth",
-  "clerkjs",
+  "clerk",
   "html5",
   "css3",
   "nodedotjs",
@@ -391,22 +390,22 @@ export const techSkills = [
   "amazonaws",
   "postgresql",
   "cloudflare",
-  "nextauthdotjs",
+  // "nextauthdotjs",
   "vercel",
   "python",
   "mongodb",
   "supabase",
   "docker",
-  "server",
+  // "server",
   "git",
-  "operatingsystem",
+  // "operatingsystem",
   "github",
   // "DBMS",
   "visualstudiocode",
   "notion",
-  "sqllite",
+  "sqlite",
   "bootstrap",
-  "datastructures",
+  // "datastructures",
   "leetcode",
   "figma",
   "shadcnui",
@@ -418,7 +417,7 @@ export const techSkills = [
   "redux",
   "linux",
   "ubuntu",
-  // "chatgpt",
+  "openai",
   // "ml",
 
 ];
@@ -437,7 +436,8 @@ export const projectsContent = [
       <div className="h-full w-full  flex items-center justify-center text-white">
         <Image
           src="https://images.unsplash.com/photo-1500917293891-ef795e70e1f6?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          fill
+          height={500}
+          width={500}
           className="h-full w-full object-cover"
           alt="linear board demo"
         />
@@ -457,7 +457,8 @@ export const projectsContent = [
       <div className="h-full w-full  flex items-center justify-center text-white">
         <Image
           src="https://images.unsplash.com/photo-1536565206219-37a3cf48b2d3?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8Z2lybCUyMG1vZGVsfGVufDB8MHwwfHx8Mg%3D%3D"
-          fill
+          height={500}
+          width={500}
           className="h-full w-full object-cover"
           alt="linear board demo"
         />
@@ -477,7 +478,8 @@ export const projectsContent = [
       <div className="h-full w-full  flex items-center justify-center text-white">
         <Image
           src="https://images.unsplash.com/photo-1500917293891-ef795e70e1f6?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          fill
+          height={500}
+          width={500}
           className="h-full w-full object-cover"
           alt="linear board demo"
         />
@@ -497,7 +499,8 @@ export const projectsContent = [
       <div className="h-full w-full  flex items-center justify-center text-white">
         <Image
           src="https://images.unsplash.com/photo-1536565206219-37a3cf48b2d3?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8Z2lybCUyMG1vZGVsfGVufDB8MHwwfHx8Mg%3D%3D"
-          fill
+          height={500}
+          width={500}
           className="h-full w-full object-cover"
           alt="linear board demo"
         />
