@@ -16,7 +16,7 @@ import { Button } from "@/components/ui/button";
 import { useToast } from "@/components/ui/use-toast";
 
 
-const page = () => {
+const Page = () => {
   const [entries, setEntries] = useState<GuestbookEntry[]>([]);
   const [clickCount, setClickCount] = useState(0);
   const clickTimeout = useRef<NodeJS.Timeout | null>(null);
@@ -166,4 +166,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
