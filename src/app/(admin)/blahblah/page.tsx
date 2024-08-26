@@ -29,7 +29,6 @@ export default function App() {
   };
 
   const handlePasswordSubmit = () => {
-    console.log(password);
     if (password === process.env.NEXT_PUBLIC_UPLOAD_PASSWORD) {
       setIsAuthorized(true);
       setIsModalOpen(false);

@@ -7,7 +7,7 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
-import { HomeIcon, Rss } from "lucide-react";
+import { HomeIcon, Rss, Signature } from "lucide-react";
 import Link from "next/link";
 import React from "react";
 
@@ -44,6 +44,19 @@ const SidebarFooter = () => {
         <Tooltip>
           <TooltipTrigger asChild>
             <Button variant={"ghost"} className="p-2" asChild>
+              <Link href={"/guestbook"}>
+                <Signature className="h-4 w-4" />
+              </Link>
+            </Button>
+          </TooltipTrigger>
+          <TooltipContent className="opacity-50">
+            <p>Sign my Guestbook</p>
+          </TooltipContent>
+        </Tooltip>
+        
+        <Tooltip>
+          <TooltipTrigger asChild>
+            <Button variant={"ghost"} className="p-2" asChild>
               <DarkModeToggle />
             </Button>
           </TooltipTrigger>
@@ -51,6 +64,7 @@ const SidebarFooter = () => {
             <p>Toggle theme</p>
           </TooltipContent>
         </Tooltip>
+
       </TooltipProvider>
     </div>
   );

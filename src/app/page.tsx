@@ -1,4 +1,5 @@
 import AnimatedShinyText from "@/components/magicui/animated-shiny-text";
+import ShinyButton from "@/components/magicui/shiny-button";
 import Particles from "@/components/Particles";
 import { LampDemo } from "@/components/ui/lamp";
 import Link from "next/link";
@@ -13,7 +14,7 @@ const page = () => {
           quantity={100}
         />
         <div className="flex flex-col items-center justify-center">
-          <h3 className="text-md duration-500 text-zinc-300 hover:text-zinc-400 font-mono">
+          <h3 className="text-md duration-500 text-zinc-300 hover:text-zinc-400 font-serif">
             Hey there, I am
           </h3>
 
@@ -77,6 +78,15 @@ const page = () => {
             but let me tell you I am a combination of both.
           </h3>
         </div>
+        <Link
+          href={"/guestbook"}
+          className="mt-2 absolute bottom-32 sm:bottom-20"
+        >
+          <ShinyButton
+            text={`Sign my Guestbook`}
+            className="items-center px-4 py-2 rounded-xl"
+          />
+        </Link>
       </div>
     </main>
   );

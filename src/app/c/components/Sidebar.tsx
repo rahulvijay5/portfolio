@@ -76,7 +76,7 @@ const Sidebar: React.FC = () => {
               size={"icon"}
               variant={"outline"}
               onClick={toggleSidebar}
-              className="fixed top-4 right-8 lg:hidden z-50 p-2 opacity-50 bg-gray-800 hover:bg-gray-800 dark:bg-gray-700 dark:hover:bg-gray-700 text-white rounded"
+              className="fixed top-4 right-4 lg:hidden z-50 p-2 opacity-50 bg-gray-800 hover:bg-gray-800 dark:bg-gray-700 dark:hover:bg-gray-700 text-white rounded-full"
             >
               {isSidebarOpen ? <SidebarClose /> : <SidebarOpen />}
             </Button>
@@ -89,7 +89,7 @@ const Sidebar: React.FC = () => {
 
       {/* Sidebar for Mobile */}
       <div
-        className={`fixed inset-y-0 left-0  transform ${
+        className={`fixed inset-y-0 left-0 bg-inherit transform ${
           isSidebarOpen
             ? "translate-x-0 shadow-xl shadow-black"
             : "-translate-x-full"

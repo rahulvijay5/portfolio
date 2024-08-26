@@ -7,6 +7,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { Toaster } from "@/components/ui/toaster"
 import { Toast } from "@/components/ui/toast";
+import { GoogleOAuthProvider } from "@react-oauth/google";
 // import { DockToUse } from "@/components/Dock";
 
 const fontSans = Inter({ subsets: ["latin"], variable: "--font-sans" });
@@ -52,7 +53,9 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <main>
-            {children}
+          {/* <GoogleOAuthProvider clientId={process.env.NEXT_PUBLIC_GOOGLE_CLIENT_ID!}> */}
+          {children}
+        {/* </GoogleOAuthProvider> */}
           </main>
           <Toaster/>
         </ThemeProvider>

@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import { ArrowUpRight, LucideArrowUpRight } from "lucide-react";
 import { socialHandles } from "@/lib/constants";
+import ShinyButton from "@/components/magicui/shiny-button";
 
 // I know this is bad way of doing it, but i am in hurry right now, so bear it up.
 
@@ -23,7 +24,7 @@ export function ContactPage({ purpose }: { purpose: "t" | "c" }) {
           </h1>
 
           <div className="grid md:grid-cols-2 gap-6 md:gap-12">
-            <div className="space-y-12">
+            <div className="space-y-6 md:space-y-12">
               <div>
                 <h2 className="text-xl font-semibold mb-2">Email</h2>
                 <Link
@@ -43,6 +44,13 @@ export function ContactPage({ purpose }: { purpose: "t" | "c" }) {
                   +91 9252993555
                 </Link>
               </div>
+
+              <Link href={"/guestbook"}>
+                <ShinyButton
+                  text={`Sign my Guestbook`}
+                  className="items-center text-lg px-4 py-2 rounded-xl"
+                />
+              </Link>
             </div>
 
             <div className="space-y-12">
@@ -116,9 +124,9 @@ export function ContactPage({ purpose }: { purpose: "t" | "c" }) {
           </h1>
 
           <div className="grid md:grid-cols-2 gap-6 md:gap-12">
-            <div className="space-y-12">
+            <div className="space-y-6 md:space-y-12 h-full">
               <div>
-                <h2 className="text-xl font-semibold mb-2">Email</h2>
+                <h2 className="text-xl font-semibold mb-1">Email</h2>
                 <Link
                   href="mailto:rahulviijay@gmail.com"
                   className="text-xl font-light hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors duration-300"
@@ -128,7 +136,7 @@ export function ContactPage({ purpose }: { purpose: "t" | "c" }) {
               </div>
 
               <div>
-                <h2 className="text-xl font-semibold mb-2">Phone</h2>
+                <h2 className="text-xl font-semibold mb-1">Phone</h2>
                 <Link
                   href="tel:+919252993555"
                   className="text-xl font-light hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors duration-300"
@@ -136,6 +144,13 @@ export function ContactPage({ purpose }: { purpose: "t" | "c" }) {
                   +91 9252993555
                 </Link>
               </div>
+
+              <Link href={"/guestbook"} className="mt-2">
+                <ShinyButton
+                  text={`Sign my Guestbook`}
+                  className="items-center text-lg px-4 py-2 rounded-xl"
+                />
+              </Link>
             </div>
 
             <div className="space-y-12">

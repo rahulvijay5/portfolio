@@ -18,7 +18,7 @@ const PastExperiences: React.FC = () => {
 
   return (
     <section
-      className="py-16 px-4 md:px-8  md:snap-start flex items-center justify-center h-screen"
+      className="py-16 px-4 md:px-8 mt-20 sm:my-0 md:snap-start flex items-center justify-center h-screen"
       id="past_experiences"
     >
       <div className="max-w-4xl mx-auto">

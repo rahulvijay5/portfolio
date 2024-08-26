@@ -9,6 +9,7 @@ import {
   MailIcon,
   Map,
   PencilIcon,
+  Signature,
 } from "lucide-react";
 
 import { cn } from "@/lib/utils";
@@ -33,9 +34,10 @@ import { DarkModeToggle } from "./DarkModeToggle";
 const DATA = {
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
-    { href: "/tech", icon: LaptopMinimal, label: "Tech" },
+    // { href: "/tech", icon: LaptopMinimal, label: "Tech" },
     { href: "/c", icon: Map, label: "Creatives" },
     { href: "/blog", icon: PencilIcon, label: "Blog" },
+    { href: "/guestbook", icon: Signature, label: "Guestbook" },
   ],
   contact: {
     socialHandles,

@@ -27,3 +27,11 @@ export interface Education {
   }
 
   export type IconProps = React.HTMLAttributes<SVGElement>;
+
+  export interface GuestbookEntry {
+    id: string;
+    message: string;
+    name: string;
+    email: string;
+    createdAt: string;
+  }
