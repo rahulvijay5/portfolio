@@ -4,6 +4,8 @@ import { useMotionValueEvent, useScroll } from "framer-motion";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
+import { moreProjects } from "@/lib/constants";
+import { Button } from "./button";
 
 export const StickyScroll = ({
   content,
@@ -145,7 +147,24 @@ export const StickyScroll = ({
                 </motion.div>
               </div>
             ))}
-            <div className="h-12" />
+            <div className="my-6">
+              <h1>More projects I have worked on:</h1>
+              {moreProjects.map((item, index) => (
+                <div key={item.title + index} className="my-2">
+                    <Button asChild variant={"link"}>
+                      <Link
+                        href={item.repolink}
+                        className="hover:text-blue-500 hover:underline"
+                        rel="noopener noreferrer"
+                        passHref
+                      >
+                        {item.title}
+                      </Link>
+                    </Button>
+                </div>
+              ))}
+            </div>
+            <div className="h-10"/>
           </div>
         </div>
         <div

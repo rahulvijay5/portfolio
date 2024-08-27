@@ -117,6 +117,7 @@ const Page = () => {
             >
               <p className="text-lg mb-2">{entry.message}</p>
               <div className="flex justify-between items-center">
+                <div>
                 <p className="text-sm text-gray-600 overflow-x-hidden">
                   - {entry.name} on{" "}
                   {new Date(entry.createdAt).toLocaleDateString("en-GB", {
@@ -125,6 +126,10 @@ const Page = () => {
                     year: "numeric",
                   })}
                 </p>
+                <p className="text-sm text-gray-600 overflow-x-hidden">
+                  - {entry.email}
+                </p>
+                </div>
                 <Button
                   size={"icon"}
                   className="bg-red-500/20 text-white"

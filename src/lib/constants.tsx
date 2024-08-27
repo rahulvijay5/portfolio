@@ -218,7 +218,7 @@ export const bucketListItems = [
         "Building powerful applications with speed and efficiency, leveraging the latest no-code platforms.",
     },
     {
-      name: "Lightroom & </br> Premiere Pro",
+      name: "Lightroom & Premiere Pro",
       icon: "🎬",
       color: "bg-red-500",
       description:
@@ -339,7 +339,7 @@ export const bucketListItems = [
       startDate: new Date(2020, 10),
       endDate: new Date(2024, 5),
       description:
-      "Specialized in computer and communication engineering, primarily learnt about softeare engineering and data structures, while completing a few of projects.",
+      "Specialization in computer and communication engineering, primarily learnt about software engineering and data structures, while completing a few of projects.",
     },
     {
       degree: "High Schooling",
@@ -424,13 +424,13 @@ export const techSkills = [
 
 export const projectsContent = [
   {
-    title: "Running out of content",
+    title: "Vijaychai",
     description: {
       details:
-        "Experience real-time updates and never stress about version control again. Our platform ensures that you're always working on the most recent version of your project, eliminating the need for constant manual updates. Stay in the loop, keep your team aligned, and maintain the flow of your work without any interruptions.",
-      skills: ["reactjs", "nextjs"],
-      livelink:"abc.com",
-      repolink:"abc.com",
+        "A complete fullstack wholesale order management platform, built for my father's shop, where customers can place their order under their business name with Clerk Auth, with complete admin privileges to admin, to view, modify, and manage orders, enabling insights with beautiful and modern UI and UI.",
+      skills: ["NextJs","Clerk","Docker","Postgresql","Prisma ORM","ShadcnUI"],
+      livelink:"https://vijaychai.vercel.app",
+      repolink:"https://github.com/rahulvijay5/store",
     },
     content: (
       <div className="h-full w-full  flex items-center justify-center text-white">
@@ -439,20 +439,19 @@ export const projectsContent = [
           height={500}
           width={500}
           className="h-full w-full object-cover"
-          alt="linear board demo"
+          alt="App showcase"
         />
       </div>
     ),
   },
   {
-    title: "Running out of content",
+    title: "This Portfolio Site",
     description: {
-      details:
-        "Experience real-time updates and never stress about version control again. Our platform ensures that you're always working on the most recent version of your project, eliminating the need for constant manual updates. Stay in the loop, keep your team aligned, and maintain the flow of your work without any interruptions.",
-      skills: ["reactjs", "nextjs"],
-      livelink:"abc.com",
-      repolink:"abc.com",
-    },
+    details: "This is a fully responsive and dynamic portfolio site built using Next.js, TailwindCSS, and ShadcnUI. The site features a blog, project showcase, guestbook, and interactive components that highlight my skills as a developer. It’s designed with a minimalistic aesthetic, ensuring a clean and user-friendly experience across all devices.",
+    skills: ["Next.js","Cloudflare R2", "TailwindCSS", "Prisma", "TypeScript", "ShadcnUI",],
+    livelink: "https://rahulviijay.netlify.app/",
+    repolink: "https://github.com/rahulvijay5/portfolio"
+  },
     content: (
       <div className="h-full w-full  flex items-center justify-center text-white">
         <Image
@@ -460,19 +459,17 @@ export const projectsContent = [
           height={500}
           width={500}
           className="h-full w-full object-cover"
-          alt="linear board demo"
+          alt="App showcase"
         />
       </div>
     ),
   },
   {
-    title: "Running out of content",
+    title: "Realtime Web Chat Application",
     description: {
-      details:
-        "Experience real-time updates and never stress about version control again. Our platform ensures that you're always working on the most recent version of your project, eliminating the need for constant manual updates. Stay in the loop, keep your team aligned, and maintain the flow of your work without any interruptions.",
-      skills: ["reactjs", "nextjs"],
-      livelink:"abc.com",
-      repolink:"abc.com",
+      details: "A comprehensive realtime web chat application built using the MERN stack and Socket.IO allowing multiple users to chat with each other in real-time, with robust state management using Redux. It features user status management, allowing users to set their status to 'Busy' or 'Available', if a user is busy, others can chat with an AI instead, secured by JWT-based authentication to ensure data privacy.",
+      skills: ["Socket.IO", "MongoDB", "React.js", "TailwindCSS", "Redux", "JWT"],
+      repolink: "https://github.com/rahulvijay5/chatApp_hq"
     },
     content: (
       <div className="h-full w-full  flex items-center justify-center text-white">
@@ -481,19 +478,18 @@ export const projectsContent = [
           height={500}
           width={500}
           className="h-full w-full object-cover"
-          alt="linear board demo"
+          alt="App showcase"
         />
       </div>
     ),
   },
   {
-    title: "Running out of content",
+    title: "Connect App",
     description: {
       details:
-        "Experience real-time updates and never stress about version control again. Our platform ensures that you're always working on the most recent version of your project, eliminating the need for constant manual updates. Stay in the loop, keep your team aligned, and maintain the flow of your work without any interruptions.",
-      skills: ["reactjs", "nextjs"],
-      livelink:"abc.com",
-      repolink:"abc.com",
+        "App that allows users to connect to others on the basis of their social connection level, how friendly they are to each other, users can manage their connections, their privacy their details like what they want to share and what now with others. (Currently I am building and working on this.)",
+      skills: ["Nextjs","KindeAuth", "TailwindCSS", "MongoDB", "Prisma"],
+      repolink:"https://github.com/rahulvijay5/connect",
     },
     content: (
       <div className="h-full w-full  flex items-center justify-center text-white">
@@ -502,9 +498,16 @@ export const projectsContent = [
           height={500}
           width={500}
           className="h-full w-full object-cover"
-          alt="linear board demo"
+          alt="App showcase"
         />
       </div>
     ),
   },
 ];
+
+export const moreProjects = [
+  {title:"Thailand ID Verification App", repolink:"https://github.com/rahulvijay5/Qoala-OCR"},
+  {title:"Future Stock Prediction Model", repolink:"https://github.com/rahulvijay5/future_stock_prediction"},
+  {title:"Detect and Estimate Human Posture", repolink:"https://github.com/rahulvijay5/Posture_Detection_Using_Python"},
+  {title:"Data analysis on Endosulfan", repolink:"https://github.com/rahulvijay5/Data_Analysis_Using_Python"},
+]
