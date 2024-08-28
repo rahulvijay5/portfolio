@@ -163,14 +163,14 @@ export const bucketListItems = [
     { title: "Kedarkantha Snowstorm", description: "Rescued during a treacherous snowstorm" },
     { title: "Wildlife Encounters", description: "Close encounters with wild bears and leopards" },
     { title: "Cross-Country Train Journey", description: "One of India's longest train journeys, west to east" },
-    { title: "Scooter to Gangotri", description: "Defied odds, rode an Activa to Gangotri in the rain" },
+    { title: "Scooties to Gangotri", description: "Defied odds, rode an Activa to Gangotri in the rain" },
   ];
   
   export const adventureSectionImages = [
-    'https://images.unsplash.com/photo-1561982479-c36896dad276?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    'https://images.unsplash.com/photo-1669851274769-a3ce80ac021f?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    'https://images.unsplash.com/photo-1593836788196-9fd68e904906?q=80&w=2573&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    'https://images.unsplash.com/photo-1579752515255-40a127455074?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    'https://pub-820e71ce4d574173a723b481ca8f19c7.r2.dev/1724782184296-KedarkanthaAdventure.png',
+    'https://pub-820e71ce4d574173a723b481ca8f19c7.r2.dev/1724782249744-WildlifeEncounter.jpg',
+    'https://pub-820e71ce4d574173a723b481ca8f19c7.r2.dev/1724782218129-CrossCountryTrainJourney.jpg',
+    'https://pub-820e71ce4d574173a723b481ca8f19c7.r2.dev/1724782235184-ScootiesToGangotri.jpg',
   ];
 
   // SKills used in creative section:
@@ -262,18 +262,19 @@ export const bucketListItems = [
   ];
 
   export const travelerSectionImages = [
-    "https://images.unsplash.com/photo-1561982479-c36896dad276?q=100&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "https://images.unsplash.com/photo-1526404746352-668ded9b50ab?q=100&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "https://images.unsplash.com/photo-1669851274769-a3ce80ac021f?q=100&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "https://pub-820e71ce4d574173a723b481ca8f19c7.r2.dev/1724783912788-Traveler1.jpg",
+    "https://pub-820e71ce4d574173a723b481ca8f19c7.r2.dev/1724783935453-Traveler2.jpg",
+    "https://pub-820e71ce4d574173a723b481ca8f19c7.r2.dev/1724783948758-Traveler3.jpg",
   ];
 
   export const photographySectionImages = [
-    "https://images.unsplash.com/photo-1724179016304-972febc1cc43?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?height=600&width=800&text=Photo+1",
-    "https://images.unsplash.com/photo-1724180872527-4087c8db6093?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?height=600&width=800&text=Photo+2",
-    "https://images.unsplash.com/photo-1724166647099-7a5b3e686e8f?q=80&w=2671&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?height=600&width=800&text=Photo+3",
+    "https://pub-820e71ce4d574173a723b481ca8f19c7.r2.dev/1724783948758-Traveler3.jpg",
+    "https://pub-820e71ce4d574173a723b481ca8f19c7.r2.dev/1724853884184-20220503-DSC_0047.jpg",
+    "https://pub-820e71ce4d574173a723b481ca8f19c7.r2.dev/1724853924807-20220616-DSC_0261-1.jpg",
+    "https://pub-820e71ce4d574173a723b481ca8f19c7.r2.dev/1724853953507-DSC_0024.JPG",
   ];
 
-  export const pushingLimitsSectionImage = "https://images.unsplash.com/photo-1724179016304-972febc1cc43?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?height=600&width=800&text=Photo+1"
+  export const pushingLimitsSectionImage = "https://pub-820e71ce4d574173a723b481ca8f19c7.r2.dev/1724783948758-Traveler3.jpg"
 
   export const sidebarSections = [
     { id: "about_me", label: "About Me" },
@@ -291,7 +292,7 @@ export const bucketListItems = [
     { id: "contact", label: "Let's Connect" },
   ];
 
-  export const storytellerSectionImage = "https://images.unsplash.com/photo-1593836788196-9fd68e904906?q=80&w=2573&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?height=300&width=400&text=Story+Snapshot"
+  export const storytellerSectionImage = "https://pub-820e71ce4d574173a723b481ca8f19c7.r2.dev/1724783948758-Traveler3.jpg"
 
   export const testimonials = [
     {
@@ -433,12 +434,12 @@ export const projectsContent = [
       repolink:"https://github.com/rahulvijay5/store",
     },
     content: (
-      <div className="h-full w-full  flex items-center justify-center text-white">
+      <div className="h-full w-full  flex items-center justify-center text-white ">
         <Image
-          src="https://images.unsplash.com/photo-1500917293891-ef795e70e1f6?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          src="https://pub-820e71ce4d574173a723b481ca8f19c7.r2.dev/1724777372922-storeThumb.png"
           height={500}
           width={500}
-          className="h-full w-full object-cover"
+          className="h-full w-full object-contain rounded-md"
           alt="App showcase"
         />
       </div>
@@ -455,10 +456,10 @@ export const projectsContent = [
     content: (
       <div className="h-full w-full  flex items-center justify-center text-white">
         <Image
-          src="https://images.unsplash.com/photo-1536565206219-37a3cf48b2d3?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8Z2lybCUyMG1vZGVsfGVufDB8MHwwfHx8Mg%3D%3D"
+          src="https://pub-820e71ce4d574173a723b481ca8f19c7.r2.dev/1724777672362-portfolioThumb.png"
           height={500}
           width={500}
-          className="h-full w-full object-cover"
+          className="h-full w-full object-contain rounded-md"
           alt="App showcase"
         />
       </div>
@@ -474,10 +475,10 @@ export const projectsContent = [
     content: (
       <div className="h-full w-full  flex items-center justify-center text-white">
         <Image
-          src="https://images.unsplash.com/photo-1500917293891-ef795e70e1f6?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          src="https://pub-820e71ce4d574173a723b481ca8f19c7.r2.dev/1724777762583-chatAppThumb.png"
           height={500}
           width={500}
-          className="h-full w-full object-cover"
+          className="h-full w-full object-contain rounded-md"
           alt="App showcase"
         />
       </div>
@@ -494,10 +495,10 @@ export const projectsContent = [
     content: (
       <div className="h-full w-full  flex items-center justify-center text-white">
         <Image
-          src="https://images.unsplash.com/photo-1536565206219-37a3cf48b2d3?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8Z2lybCUyMG1vZGVsfGVufDB8MHwwfHx8Mg%3D%3D"
+          src="https://pub-820e71ce4d574173a723b481ca8f19c7.r2.dev/1724777781323-connectThumb.png"
           height={500}
           width={500}
-          className="h-full w-full object-cover"
+          className="h-full w-full object-contain rounded-md"
           alt="App showcase"
         />
       </div>

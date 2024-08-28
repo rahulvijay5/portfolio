@@ -32,9 +32,7 @@ const AdventurerSection: React.FC = () => {
             isVisible ? "opacity-100" : "opacity-0"
           }`}
         >
-          <h2 className="text-4xl md:text-5xl font-bold">
-            I Am an Adventurer
-          </h2>
+          <h2 className="text-4xl md:text-5xl font-bold">I Am an Adventurer</h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 italic">
             Pushing the Boundaries of Exploration
           </p>
@@ -44,7 +42,7 @@ const AdventurerSection: React.FC = () => {
             I&apos;ve embraced it all. My journeys have taken me to places where
             few dare to tread.
           </p>
-          <div className="bg-gray-100 dark:bg-slate-900 p-4 rounded-lg transition-all duration-1000 delay-300 transform hover:scale-105">
+          <div className="bg-gray-100 dark:bg-slate-800 p-4 rounded-lg transition-all duration-1000 delay-300 transform hover:scale-105">
             <h3 className="text-xl font-semibold mb-2">
               {adventureSectionContent[currentAdventure].title}
             </h3>
@@ -61,14 +59,16 @@ const AdventurerSection: React.FC = () => {
               alt={`Adventure ${index + 1}`}
               width={500}
               height={500}
-              className={`object-cover w-full h-full transition-opacity duration-500 ${
+              className={`object-cover w-full h-full absolute inset-0 transition-opacity duration-1000 ease-in-out ${
                 index === currentAdventure ? "opacity-100" : "opacity-0"
               }`}
+              priority={index === 0} // Preload the first image
+              loading={index === 0 ? "eager" : "lazy"} // Lazy load subsequent images
             />
           ))}
         </div>
         <p className="text-gray-500 text-end">
-          ...these were just a few of them
+          ...these were just a few of many.
         </p>
       </div>
     </section>

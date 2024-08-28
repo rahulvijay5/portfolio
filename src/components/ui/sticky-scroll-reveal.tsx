@@ -148,7 +148,7 @@ export const StickyScroll = ({
               </div>
             ))}
             <div className="my-6">
-              <h1>More projects I have worked on:</h1>
+              <h1>Additional projects I have worked on:</h1>
               {moreProjects.map((item, index) => (
                 <div key={item.title + index} className="my-2">
                     <Button asChild variant={"link"}>
@@ -170,7 +170,7 @@ export const StickyScroll = ({
         <div
           style={{ background: backgroundGradient }}
           className={cn(
-            "hidden md:block h-80 w-100 rounded-md bg-white sticky top-10 overflow-hidden mr-10",
+            "hidden md:block h-80 w-100 bg-white sticky top-10 overflow-hidden mr-10",
             contentClassName
           )}
         >

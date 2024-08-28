@@ -3,7 +3,7 @@
 import { photographySectionImages } from "@/lib/constants";
 import { Camera, Image as ImageIcon, Share2 } from "lucide-react";
 import Image from "next/image";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function PhotographySection() {
   const [activeImage, setActiveImage] = useState(0);
@@ -17,39 +17,41 @@ export default function PhotographySection() {
         <div className="flex flex-col lg:flex-row gap-12">
           {/* Left Column - Image Gallery */}
           <div className="lg:w-2/3">
-            <div className="relative aspect-video mb-4">
-              <Image
-                src={photographySectionImages[activeImage]}
-                alt={`Featured photograph ${activeImage + 1}`}
-                // layout="fill"
-                width={500}
-                height={500}
-                className="w-full h-full object-cover rounded-lg"
-              />
-              <div className="absolute bottom-4 right-4 bg-black bg-opacity-50 p-2 rounded-full">
-                <Camera className="w-6 h-6" />
-              </div>
-            </div>
-            <div className="flex justify-center gap-4 flex-wrap">
-              {photographySectionImages.map((img, index) => (
-                <button
-                  key={index}
-                  onClick={() => setActiveImage(index)}
-                  className={`w-20 h-20 rounded-lg opacity-30 blur-sm/50 overflow-hidden ${
-                    index === activeImage
-                      ? "ring-2 opacity-100 blur-0 ring-blue-500"
-                      : ""
-                  }`}
-                >
-                  <img
-                    src={img}
-                    alt={`Thumbnail ${index + 1}`}
-                    className="w-full h-full object-cover"
-                  />
-                </button>
-              ))}
-            </div>
-          </div>
+      <div className="relative aspect-video mb-4">
+        <Image
+          src={photographySectionImages[activeImage]}
+          alt={`Featured photograph ${activeImage + 1}`}
+          fill
+          className="w-full h-full object-cover rounded-lg"
+          priority // Preload the main image
+        />
+        {/* <div className="absolute bottom-4 right-4 bg-black bg-opacity-50 p-2 rounded-full">
+          <Camera className="w-6 h-6" />
+        </div> */}
+      </div>
+      <div className="flex justify-center gap-4 flex-wrap">
+        {photographySectionImages.map((img, index) => (
+          <button
+            key={index}
+            onClick={() => setActiveImage(index)}
+            className={`w-20 h-20 rounded-lg  overflow-hidden ${
+              index === activeImage
+                ? "ring-2 opacity-100 blur-0 ring-blue-500"
+                : "opacity-30 blur-sm/50"
+            }`}
+          >
+            <Image
+              src={img}
+              alt={`Thumbnail ${index + 1}`}
+              width={100} // Adjust width and height to suit thumbnail size
+              height={100}
+              className="w-full h-full object-cover"
+              // loading="lazy" // Lazy load thumbnails
+            />
+          </button>
+        ))}
+      </div>
+    </div>
 
           {/* Right Column - Content */}
           <div className="lg:w-1/3 space-y-8">

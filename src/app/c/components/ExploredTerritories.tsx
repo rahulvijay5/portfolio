@@ -13,11 +13,11 @@ const ExploredTerritoriesSection: React.FC = () => {
 
   return (
     <section
-      className="bg-gray-100 dark:bg-gradient-to-bl dark:from-gray-800 dark:to-gray-900 py-16 px-4 font-serif flex items-center justify-center md:snap-start md:h-screen"
+      className="bg-gray-100 dark:bg-gradient-to-bl dark:from-gray-800 dark:to-gray-900 py-16 px-4 font-serif flex items-center justify-center md:snap-start md:h-screen "
       id="terrioties"
     >
       <div className="max-w-6xl mx-auto min-h-[85vh]">
-        <h2 className="text-5xl font-bold text-gray-800 dark:text-gray-100 mb-4 leading-tight">
+        <h2 className="text-5xl font-bold text-gray-800 mt-12 dark:text-gray-100 mb-4 leading-tight">
           Explored Territories
         </h2>
         <h3 className="text-2xl text-gray-600 dark:text-gray-300 mb-8 italic">
@@ -62,7 +62,7 @@ const ExploredTerritoriesSection: React.FC = () => {
             <div className="w-full h-[20vh] md:h-1/2 relative">
               <Image
                 src={
-                  "https://images.unsplash.com/photo-1724179016304-972febc1cc43?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?height=600&width=800&text=Photo+1"
+                  "https://pub-820e71ce4d574173a723b481ca8f19c7.r2.dev/1724783948758-Traveler3.jpg"
                 }
                 alt="waste collected"
                 // layout="fill"

@@ -11,7 +11,7 @@ import WordRotate from "./magicui/word-rotate";
 
 const DownloadResume = () => (
   <motion.a
-    href="https://pub-820e71ce4d574173a723b481ca8f19c7.r2.dev/1724572705386-Rahul_Resume_short.pdf"
+    href="https://pub-820e71ce4d574173a723b481ca8f19c7.r2.dev/1724777162070-Rahul_Resume_short.pdf"
     download
     target="_blank"
     whileHover={{ scale: 1.05 }}
@@ -45,8 +45,9 @@ const LandingHeader: React.FC = () => {
               A self-taught programmer with a passion for development. For the
               past two years, I&apos;ve been immersing myself in the world of
               programming, often finding inspiration in the middle of the night.
-              I&apos;m open to work right now, preferably in a startup environment where I can
-              contribute and grow and build tech products for the world..
+              I&apos;m open to work right now, preferably in a startup
+              environment where I can contribute and grow and build tech
+              products for the world..
             </p>
             <div className="flex items-center space-x-4">
               <DownloadResume />
@@ -67,13 +68,13 @@ const LandingHeader: React.FC = () => {
             className="relative"
           >
             {/* <div className="absolute inset-0 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full blur-2xl opacity-20"></div> */}
-            <NeonGradientCard className="max-w-sm opacity-70 items-center justify-center text-center relative">
+            <NeonGradientCard className="max-w-sm opacity-70 items-center justify-center text-center relative rounded-lg">
               <Image
                 alt="Rahul Vijay"
-                src="https://images.unsplash.com/photo-1583341612074-ccea5cd64f6a?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                src="https://pub-820e71ce4d574173a723b481ca8f19c7.r2.dev/1724779074438-techHeaderImage.jpg"
                 width={400}
                 height={400}
-                className=" w-full h-full sm:w-80 rounded-full sm:h-80 object-cover  z-10"
+                className=" w-full h-full rounded-2xl object-cover grayscale cursor-none z-10"
               />
             </NeonGradientCard>
           </motion.div>
@@ -83,7 +84,7 @@ const LandingHeader: React.FC = () => {
             <span className="text-2xl font-bold mr-3">
               <WordRotate
                 className="text-2xl font-bold text-black dark:text-white"
-                words={["Programmer?", "Engineer?","Developer?"]}
+                words={["Programmer?", "Engineer?", "Developer?"]}
               />
             </span>
             then Better be seen this in <DarkModeToggleText />

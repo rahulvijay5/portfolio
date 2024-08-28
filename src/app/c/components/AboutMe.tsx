@@ -7,8 +7,8 @@ const AboutMeSection: React.FC = () => {
   const [activeImage, setActiveImage] = useState(0);
 
   const images = [
-    "https://images.unsplash.com/photo-1561982479-c36896dad276?q=100&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "https://images.unsplash.com/photo-1526404746352-668ded9b50ab?q=100&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "https://pub-820e71ce4d574173a723b481ca8f19c7.r2.dev/1724853407318-AboutMe1.JPG",
+    "https://pub-820e71ce4d574173a723b481ca8f19c7.r2.dev/1724853429290-AboutMe2.JPG",
   ];
 
   return (

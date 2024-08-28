@@ -39,7 +39,7 @@ const DiscovererOfHiddenGems = () => {
             className="h-full w-full bg-no-repeat bg-bottom bg-cover"
             style={{
               backgroundImage:
-                "url('https://images.unsplash.com/photo-1724179016304-972febc1cc43?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?height=600&width=800&text=Photo+1')",
+                "url('https://pub-820e71ce4d574173a723b481ca8f19c7.r2.dev/1724783948758-Traveler3.jpg')",
             }}
           ></div>
         </div>

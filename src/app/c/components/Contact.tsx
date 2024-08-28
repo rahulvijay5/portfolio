@@ -82,7 +82,7 @@ export function ContactPage({ purpose }: { purpose: "t" | "c" }) {
             </div>
           </div>
 
-          <div className="mt-6 md:mt-10">
+          <div className="mt-8 md:mt-10">
             <p className="text-lg md:mb-2">
               You really got upto here? Surprising!
             </p>
@@ -182,7 +182,7 @@ export function ContactPage({ purpose }: { purpose: "t" | "c" }) {
             </div>
           </div>
 
-          <div className="mt-6 md:mt-10">
+          <div className="mt-8 md:mt-10">
             <p className="text-lg md:mb-2">
               You really got upto here? Surprising!
             </p>

@@ -39,8 +39,8 @@ export default function Guestbook() {
       2000
     );
     setTimeout(() => setIntialDisplayTimeout(true), 4500);
-    setTimeout(() => setCurrentStep(0), 9000);
-    setTimeout(() => setShowcase(false), 7000);
+    setTimeout(() => setCurrentStep(0), 8000);
+    setTimeout(() => setShowcase(false), 6000);
   }, []);
 
   useEffect(() => {
