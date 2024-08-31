@@ -3,7 +3,7 @@
 import {
   Bike,
   Compass,
-  Mountain,
+  // Mountain,
   SidebarClose,
   SidebarOpen,
   Train,
@@ -21,11 +21,21 @@ import {
 import SidebarFooter from "./SidebarFooter";
 import AutoImageSlider from "@/components/AutoImageSlider";
 import { HoverEffect } from "@/components/ui/card-hover-effect";
-import { demoUrl, sidebarSections } from "@/lib/constants";
+import { 
+  sidebarSections
+ } from "@/lib/constants";
 
-const Sidebar: React.FC = () => {
+import { motion } from 'framer-motion';
+
+interface SidebarProps {
+  isExpanded: boolean;
+  setIsExpanded: (expanded: boolean) => void;
+}
+
+const Sidebar: React.FC<SidebarProps> = ({ isExpanded, setIsExpanded }) => {
 
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+
 
   useEffect(() => {
     const handleKeyDown = (event: KeyboardEvent) => {
@@ -48,23 +58,43 @@ const Sidebar: React.FC = () => {
   return (
     <>
       {/* Sidebar for Desktop */}
-      <div className="w-1/6  md:snap-start hidden lg:flex h-screen overflow-hidden justify-between flex-col px-8 py-8">
-        <Link
-          href={"#main_header"}
-          className="h-24 w-24 rounded-lg hover:cursor-none hover:shadow-sm hover:shadow-black hover:backdrop-brightness-50"
-        >
-          <AutoImageSlider
-            images={["/images/avatar.png"]}
-            altText="Rotating Avatar"
-            transitionDuration={1000} // Optional: change transition duration
-            interval={30000} // Optional: change interval
-          />
+      <motion.div 
+        className={`fixed top-0 left-0 h-screen bg-gray-100 dark:bg-gray-900 transition-all duration-300 ease-in-out overflow-hidden ${
+          isExpanded ? 'w-64' : 'w-16'
+        } hidden md:flex flex-col items-center  py-8 z-50`}
+        onMouseEnter={() => setIsExpanded(true)}
+        onMouseLeave={() => setIsExpanded(false)}
+      >
+        <Link href="#main_header" className="mb-8 w-2/3 h-24">
+          <div className={`rounded-full overflow-hidden  transition-all duration-300 ${isExpanded ? 'w-24 h-24' : 'w-12 h-12'}`}>
+            <AutoImageSlider
+              images={["/images/avatar.png"]}
+              altText="Rotating Avatar"
+              transitionDuration={1000}
+              interval={30000}
+            />
+          </div>
         </Link>
-        <HoverEffect items={sidebarSections} />
-        <div>
-          <SidebarFooter />
-        </div>
-      </div>
+
+        <nav className="flex-1">
+          <ul className="space-y-3">
+            {sidebarSections.map((section) => (
+              <li key={section.id}>
+                <Link href={`#${section.id}`} className="flex items-center text-gray-700 dark:text-gray-300 hover:text-emerald-500 dark:hover:text-emerald-400 transition-colors duration-200 line-clamp-1 truncate">
+                  <section.icon className="w-6 h-6" />
+                  {isExpanded && <span className="ml-4 ">{section.label}</span>}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </nav>
+
+        {isExpanded && (
+          <div className="mt-auto">
+            <SidebarFooter />
+          </div>
+        )}
+      </motion.div>
 
       {/* Sidebar Toggle Button for Mobile */}
       <TooltipProvider>

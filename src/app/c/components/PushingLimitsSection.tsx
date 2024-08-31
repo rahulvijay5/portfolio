@@ -6,10 +6,10 @@ import { pushingLimitsSectionImage } from "@/lib/constants";
 const PushingLimitsSection: React.FC = () => {
   return (
     <section
-      className="md:h-screen bg-gradient-to-br from-green-100 to-blue-100 dark:from-gray-900 dark:to-gray-800 p-4 md:p-8 overflow-hidden font-sans md:snap-start flex items-center justify-center"
+      className="min-h-screen md:h-screen bg-gradient-to-br from-green-100 to-blue-100 dark:from-gray-900 dark:to-gray-800 p-4 md:p-8 overflow-hidden font-sans md:snap-start flex items-center justify-center mt-4"
       id="pushing_limits"
     >
-      <div className="max-w-7xl mx-auto h-full flex flex-col">
+      <div className="max-w-7xl mx-auto h-full flex flex-col items-center justify-center">
         <header className="mb-6">
           <h1 className="text-4xl md:text-5xl font-bold text-green-800 dark:text-green-500 mb-2 leading-tight">
             Pushing the Limits
@@ -19,7 +19,7 @@ const PushingLimitsSection: React.FC = () => {
           </p>
         </header>
 
-        <div className="flex-grow grid grid-cols-1 md:grid-cols-3 gap-6 overflow-auto">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {/* Main Content */}
           <div className="md:col-span-2 flex flex-col justify-end space-y-6">
             <div className="bg-white dark:bg-gray-800  bg-opacity-80 backdrop-blur-sm rounded-lg shadow-lg p-6 transform transition duration-500 hover:scale-105">
@@ -65,12 +65,13 @@ const PushingLimitsSection: React.FC = () => {
           </div>
 
           {/* Sidebar */}
-          <div className="space-y-6">
+          <div className="md:col-span-1">
             <div className="w-full h-full relative">
               <Image
                 src={pushingLimitsSectionImage}
                 alt="waste collected"
-                fill
+                width={300}
+                height={300}
                 className="object-cover h-full w-full rounded-t-lg"
               />
             </div>

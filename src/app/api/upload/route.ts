@@ -31,7 +31,7 @@ export async function POST(request: NextRequest) {
 
     await s3.send(command);
 
-    // const url = `https://${process.env.CLOUDFLARE_R2_BUCKET_NAME}.${process.env.CLOUDFLARE_ACCOUNT_ID}.r2.cloudflarestorage.com/${fileName}`;
+    // const url = `https://rahulvijay.site/${fileName}`;
     const url = `https://${process.env.CLOUDFLARE_CUSTOM_DOMAIN}.r2.dev/${fileName}`;
 
     return NextResponse.json({ url }, { status: 200 });

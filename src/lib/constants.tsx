@@ -1,12 +1,26 @@
 import {
+  Aperture,
   Bike,
+  Briefcase,
   CalendarIcon,
   Caravan,
+  CheckIcon,
   Compass,
+  Feather,
+  Flag,
+  Globe,
+  Heart,
+  Home,
+  List,
+  Mail,
   MailIcon,
+  Map,
   Mountain,
+  MountainIcon,
   Tent,
+  ThumbsUp,
   Utensils,
+  Video,
 } from "lucide-react";
 import { Education, Experience, IconProps } from "./types";
 import Image from "next/image";
@@ -234,11 +248,19 @@ export const bucketListItems = [
   ];
 
   export const socialAccounts = [
-    { name: '@travel_the_worldd', followers: '10K+' },
-    { name: '@mumbai_tales', followers: '5K+' },
-    { name: '@desportivos.lnmiit', followers: '3K+' },
-    { name: '@imagination.lnmiit', followers: '2K+' },
+    // { name: '@travel_the_worldd', followers: '10K+' },
+    { name: 'mumbai_tales', followers: '40K+' },
+    { name: 'imagination.lnmiit', followers: '2K+' },
+    { name: 'desportivos.lnmiit', followers: '2K+' },
+    { name: 'vivacity_lnmiit', followers: '6K+' },
   ];
+
+  // export const videoLinks = [
+  //   { title: "Holi Video Shoot", url: "https://youtu.be/5-gjbAGuDq8" },
+  //   { title: "Mount Abu Vlog trailer", url: "https://youtu.be/ct_uJ3xbumw" },
+  //   { title: "Desportivos Aftermovie", url: "https://www.youtube.com/watch?v=example2" },
+  //   { title: "After Trek Short Reel", url: "https://www.instagram.com/reel/example2" },
+  // ]
 
   export const exploredLocations = [
     "Ladakh",
@@ -268,62 +290,62 @@ export const bucketListItems = [
   ];
 
   export const photographySectionImages = [
-    "https://pub-820e71ce4d574173a723b481ca8f19c7.r2.dev/1724783948758-Traveler3.jpg",
-    "https://pub-820e71ce4d574173a723b481ca8f19c7.r2.dev/1724853884184-20220503-DSC_0047.jpg",
+    "https://pub-820e71ce4d574173a723b481ca8f19c7.r2.dev/1725128185156-20240703_122039.jpg",
     "https://pub-820e71ce4d574173a723b481ca8f19c7.r2.dev/1724853924807-20220616-DSC_0261-1.jpg",
     "https://pub-820e71ce4d574173a723b481ca8f19c7.r2.dev/1724853953507-DSC_0024.JPG",
+    "https://pub-820e71ce4d574173a723b481ca8f19c7.r2.dev/1724853884184-20220503-DSC_0047.jpg",
   ];
 
-  export const pushingLimitsSectionImage = "https://pub-820e71ce4d574173a723b481ca8f19c7.r2.dev/1724783948758-Traveler3.jpg"
+  export const pushingLimitsSectionImage = "https://pub-820e71ce4d574173a723b481ca8f19c7.r2.dev/1725127602564-IMG_20240716_122155.jpg"
 
   export const sidebarSections = [
-    { id: "about_me", label: "About Me" },
-    { id: "past_experiences", label: "Past Experiences" },
-    { id: "adventurer", label: "I am an Adventurer" },
-    { id: "traveler", label: "I am a Traveler" },
-    { id: "storyteller", label: "I am a Storyteller" },
-    { id: "photographer", label: "I am a Photographer" },
-    { id: "content_creator", label: "Content Creation" },
-    { id: "pushing_limits", label: "Pushing the limits" },
-    { id: "terrioties", label: "Explored Territories" },
-    { id: "passion-profession", label: "Passion = Career?" },
-    { id: "testimonials", label: "What others say?" },
-    { id: "bucket-list", label: "Bucket List" },
-    { id: "contact", label: "Let's Connect" },
+    { id: "about_me", label: "About Me", icon: Home },
+    { id: "past_experiences", label: "Past Experiences", icon: Briefcase },
+    { id: "adventurer", label: "I am an Adventurer", icon: MountainIcon },
+    { id: "traveler", label: "I am a Traveler", icon: Globe },
+    { id: "storyteller", label: "I am a Storyteller", icon: Feather },
+    { id: "photographer", label: "I am a Photographer", icon: Aperture },
+    { id: "content_creator", label: "Content Creation", icon: Video },
+    { id: "pushing_limits", label: "Pushing the limits", icon: Flag },
+    { id: "terrioties", label: "Explored Territories", icon: Map },
+    { id: "passion-profession", label: "Passion = Career?", icon: Heart },
+    { id: "testimonials", label: "What others say?", icon: ThumbsUp },
+    { id: "bucket-list", label: "Bucket List", icon: List },
+    { id: "contact", label: "Let's Connect", icon: Mail },
   ];
 
-  export const storytellerSectionImage = "https://pub-820e71ce4d574173a723b481ca8f19c7.r2.dev/1724783948758-Traveler3.jpg"
+  export const storytellerSectionImage = "https://pub-820e71ce4d574173a723b481ca8f19c7.r2.dev/1725131230396-storyteller.jpg"
 
   export const testimonials = [
     {
       name: "Shresth Jain",
       quote: "Thanks to Rahul, I was able to drive my dream bike in the Himalayas. Without him, it would have remained just a dream.",
-      instagramHandle: "shresthjain"
+      instagramHandle: "shresthjain14"
     },
     {
       name: "Harsh Kesarwani",
       quote: "Rahul's trips are more than just travel—they're about seeing the world differently. His passion for exploration ensures that everyone experiences the raw beauty of a place.",
-      instagramHandle: "harshkesarwani"
+      instagramHandle: "harshk89_"
+    },
+    {
+      name: "Rashi Gupta",
+      quote: "Rahul made our college-ending trip unforgettable. Every moment was epic, thanks to his planning and enthusiasm.",
+      instagramHandle: "rashiii.g"
     },
     {
       name: "Anshul Jain",
-      quote: "Rahul's itinerary for our Mathura trip was spot on. We couldn't have planned a better 24-hour stay.",
-      instagramHandle: "anshuljain"
+      quote: "Rahul's itinerary for our Mathura trip was spot on. We couldn't have planned a better 28-hour trip, experiencing holi to that next level.",
+      instagramHandle: "anshul_jainn_"
     },
     {
       name: "Asim Gouri",
       quote: "Living at my dream destination was only possible because of Rahul. He made it happen, just the way I imagined.",
-      instagramHandle: "asimgouri"
-    },
-    {
-      name: "Riya Chachlani",
-      quote: "Rahul made our college-ending trip unforgettable. Every moment was epic, thanks to his planning and enthusiasm.",
-      instagramHandle: "riyachachlani"
+      instagramHandle: "asim_gouri"
     },
     {
       name: "Mahak Jain",
       quote: "Some memories never fade, and our Mount Abu trip is one of them. Despite challenges, Rahul ensured we returned with only good memories.",
-      instagramHandle: "mahakjain"
+      instagramHandle: "mahak.jain09"
     }
   ];
 

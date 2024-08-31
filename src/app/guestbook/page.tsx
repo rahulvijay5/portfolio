@@ -40,7 +40,7 @@ export default function Guestbook() {
     );
     setTimeout(() => setIntialDisplayTimeout(true), 4500);
     setTimeout(() => setCurrentStep(0), 8000);
-    setTimeout(() => setShowcase(false), 6000);
+    setTimeout(() => setShowcase(false), 7000);
   }, []);
 
   useEffect(() => {
@@ -188,7 +188,7 @@ export default function Guestbook() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-900 to-black p-4 sm:p-8">
-      <div className="max-w-2xl mx-auto bg-gray-800 rounded-lg shadow-xl overflow-hidden">
+      <div className="max-w-2xl mx-auto bg-gray-800 rounded-lg shadow-xl overflow-hidden text-white">
         <div className="p-4 sm:p-6 space-y-2 overflow-y-auto flex-wrap">
           <h1 className="text-3xl font-bold text-center mb-0">Guestbook</h1>
           <AnimatePresence>
@@ -272,7 +272,7 @@ export default function Guestbook() {
                     disabled={currentStep > 0 || isSubmitting}
                     onClick={() => setUserInput("Yes, I would love to do it!")}
                     variant={"link"}
-                    className="pl-2 w-full flex items-center transition-all duration-500 justify-start"
+                    className="pl-2 w-full flex items-center transition-all duration-500 justify-start text-white"
                   >
                     Yes, I would love to do it!
                   </Button>
@@ -281,7 +281,7 @@ export default function Guestbook() {
                     disabled={currentStep > 0 || isSubmitting}
                     onClick={() => setUserInput("Nah, it's a stupid idea!")}
                     variant={"link"}
-                    className="pl-2 w-full flex items-center transition-all duration-500 justify-start"
+                    className="pl-2 w-full flex items-center transition-all duration-500 justify-start text-white"
                   >
                     Nah, it&apos;s a stupid idea!
                   </Button>
@@ -306,7 +306,7 @@ export default function Guestbook() {
             {entries.map((entry) => (
               <div
                 key={entry.id}
-                className="bg-gradient-to-br from-gray-800 to-gray-900 bg-opacity-90 rounded-lg p-4 shadow"
+                className="bg-gradient-to-br from-gray-800 to-gray-900 bg-opacity-90 rounded-lg p-4 shadow text-white"
               >
                 <p className="text-lg mb-2">{entry.message}</p>
                 <p className="text-sm text-gray-600">
@@ -320,7 +320,7 @@ export default function Guestbook() {
               </div>
             ))}
           </div>
-          <Button className="flex items-center justify-center mt-4 bg-inherit" asChild variant={"outline"}><Link href={"/"}>Go Home</Link></Button>
+          <Button className="flex items-center justify-center mt-4 bg-inherit text-white" asChild variant={"outline"}><Link href={"/"}>Go Home</Link></Button>
         </div>
       )}
     </div>

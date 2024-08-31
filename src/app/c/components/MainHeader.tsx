@@ -22,7 +22,7 @@ const BannerComponent: React.FC = () => {
 
   return (
     <div
-      className="relative w-full h-screen overflow-hidden bg-black"
+      className="relative w-full h-[95vh] sm:min-h-screen overflow-hidden bg-black"
       onMouseMove={handleMouseMove}
       id="main_header"
     >

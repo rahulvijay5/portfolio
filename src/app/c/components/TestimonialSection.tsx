@@ -24,7 +24,7 @@ const TestimonialsSection: React.FC = () => {
 
   return (
     <section
-      className="h-[90vh] bg-white  dark:bg-gradient-to-bl dark:from-gray-800 dark:to-gray-900 text-black dark:text-gray-100 md:snap-start flex flex-col justify-center items-center px-4 overflow-hidden"
+      className="min-h-screen bg-white  dark:bg-gradient-to-bl dark:from-gray-800 dark:to-gray-900 text-black dark:text-gray-100 md:snap-start flex flex-col justify-center items-center px-4 overflow-hidden"
       id="testimonials"
     >
       <div className="max-w-4xl w-full">

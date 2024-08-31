@@ -17,6 +17,10 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: "https",
+        hostname: "rahulvijay.site",
+      },
+      {
+        protocol: "https",
         hostname: "imagedelivery.net",
       },
       {

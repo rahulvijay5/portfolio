@@ -17,7 +17,7 @@ const SidebarFooter = () => {
       <TooltipProvider>
         <Tooltip>
           <TooltipTrigger asChild>
-            <Button variant={"ghost"} className="p-2" asChild>
+            <Button variant={"ghost"} className="p-2 hover:bg-emerald-500" asChild>
               <Link href={"/"}>
                 <HomeIcon className="h-4 w-4" />
               </Link>
@@ -30,7 +30,7 @@ const SidebarFooter = () => {
 
         <Tooltip>
           <TooltipTrigger asChild>
-            <Button variant={"ghost"} className="p-2" asChild>
+            <Button variant={"ghost"} className="p-2 hover:bg-emerald-500" asChild>
               <Link href={"/blog"}>
                 <Rss className="h-4 w-4" />
               </Link>
@@ -43,7 +43,7 @@ const SidebarFooter = () => {
 
         <Tooltip>
           <TooltipTrigger asChild>
-            <Button variant={"ghost"} className="p-2" asChild>
+            <Button variant={"ghost"} className="p-2 hover:bg-emerald-500" asChild>
               <Link href={"/guestbook"}>
                 <Signature className="h-4 w-4" />
               </Link>
@@ -56,7 +56,7 @@ const SidebarFooter = () => {
         
         <Tooltip>
           <TooltipTrigger asChild>
-            <Button variant={"ghost"} className="p-2" asChild>
+            <Button variant={"ghost"} className="p-2 hover:bg-emerald-500" asChild>
               <DarkModeToggle />
             </Button>
           </TooltipTrigger>

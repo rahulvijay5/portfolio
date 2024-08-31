@@ -89,7 +89,7 @@ export default function CrazyBucketList() {
   return (
     <>
       <section
-        className="h-screen bg-gradient-to-br from-white to-gray-100/30 dark:from-gray-900 dark:to-gray-800 text-gray-800 dark:text-gray-200 overflow-hidden transition-colors duration-300 relative snap-start flex justify-center items-center"
+        className="h-screen bg-gradient-to-br from-white to-gray-100/30 dark:from-gray-900 dark:to-gray-800 text-gray-800 dark:text-gray-200 overflow-hidden transition-colors duration-300 relative flex justify-center items-center"
         id="bucket-list"
         onMouseMove={handleMouseMove}
         onMouseUp={handleMouseUp}
@@ -106,7 +106,7 @@ export default function CrazyBucketList() {
           </p>
 
           <div className="md:hidden">
-            <AnimatedList>
+            <AnimatedList delay={2500}>
               {bucketListItems.map((item, idx) => (
                 <BucketListPopups {...item} key={idx} />
               ))}

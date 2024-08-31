@@ -1,3 +1,4 @@
+import { Button } from "@/components/ui/button";
 import { storytellerSectionImage } from "@/lib/constants";
 import {
   Bike,
@@ -9,6 +10,7 @@ import {
   Train,
 } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const StorytellerSection: React.FC = () => {
@@ -70,16 +72,23 @@ const StorytellerSection: React.FC = () => {
               <h4 className="text-xl font-serif mb-4 text-amber-800 dark:text-amber-300">
                 Featured Story
               </h4>
-              <p className="text-gray-700 dark:text-gray-300 font-serif mb-4">
+              {/* <p className="text-gray-700 dark:text-gray-300 font-serif mb-4">
                 The vibrant colors of Holi in Mathura paint not just the
                 streets, but the souls of all who participate. As I stood in the
                 heart of the festivities, I felt the pulse of tradition beating
                 through the ancient city...
+              </p> */}
+              <p className="text-gray-700 dark:text-gray-300 font-serif mb-4">
+                <span>Day When I lived without any fear!</span>
+                <br />
+                Uncertain location, random people, no language to talk, no food
+                to eat, still I wanted to go for an experince and guess what! I
+                did it besides all the thoughts, and it turned out pretty well.
               </p>
-              <button className="flex items-center text-amber-600 dark:text-amber-500 hover:text-amber-800 hover:dark:text-amber-300 transition-colors">
+              <Link href={"/blog/the-day-when-i-lived-without-any-fear"} className="flex items-center text-amber-600 dark:text-amber-500 hover:text-amber-800 hover:dark:text-amber-300 transition-colors ">
                 <span className="mr-2">Read full story</span>
                 <Feather className="w-4 h-4" />
-              </button>
+              </Link>
             </div>
           </div>
 

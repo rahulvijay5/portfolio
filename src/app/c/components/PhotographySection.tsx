@@ -24,7 +24,7 @@ export default function PhotographySection() {
           fill
           className="w-full h-full object-cover rounded-lg"
           priority // Preload the main image
-        />
+      />
         {/* <div className="absolute bottom-4 right-4 bg-black bg-opacity-50 p-2 rounded-full">
           <Camera className="w-6 h-6" />
         </div> */}
@@ -81,14 +81,14 @@ export default function PhotographySection() {
             <div className="flex items-center gap-4">
               <div className="flex items-center gap-2">
                 <ImageIcon className="w-5 h-5 text-blue-800" />
-                <span className="dark:text-blue-300">1000+ Captures</span>
+                <span className="dark:text-blue-300">Thousands of Captures</span>
               </div>
-              <div className="flex items-center gap-2">
+              {/* <div className="flex items-center gap-2">
                 <Share2 className="w-5 h-5 text-purple-800" />
                 <span className="dark:text-purple-300">
                   Shared with 10k+ followers
                 </span>
-              </div>
+              </div> */}
             </div>
 
             {/* <button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full transition duration-300 ease-in-out transform hover:scale-105">

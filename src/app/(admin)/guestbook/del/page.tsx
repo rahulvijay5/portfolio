@@ -106,10 +106,10 @@ const Page = () => {
       <div
         className={`w-full flex items-center flex-col justify-center transition-all duration-1000 px-4 ${isModalOpen && "opacity-55 blur-sm"} ${!isAuthorized && !isModalOpen && "hidden"}`}
       >
-        <h2 className="mt-8 mb-2 text-2xl max-w-5xl font-bold text-white text-center">
+        <h2 className="mt-8 mb-2 text-3xl max-w-5xl font-bold dark:text-white text-black text-center">
           Showcase
         </h2>
-        <div className=" space-y-4 sm:space-x-2 max-w-2xl grid w-full items-center">
+        <div className=" space-y-4 sm:space-x-2 max-w-2xl grid w-full items-center text-white">
           {entries.map((entry) => (
             <div
               key={entry.id}

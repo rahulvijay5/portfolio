@@ -37,7 +37,7 @@ const LandingHeader: React.FC = () => {
           >
             <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold leading-tight">
               Hey there, I&apos;m <br />
-              <span className="bg-clip-text text-6xl sm:text-5xl lg:text-6xl text-transparent bg-gradient-to-r from-blue-400 to-purple-500">
+              <span className="bg-clip-text text-6xl text-transparent bg-gradient-to-r from-blue-400 to-purple-500">
                 Rahul Vijay
               </span>
             </h1>
@@ -74,7 +74,7 @@ const LandingHeader: React.FC = () => {
                 src="https://pub-820e71ce4d574173a723b481ca8f19c7.r2.dev/1724779074438-techHeaderImage.jpg"
                 width={400}
                 height={400}
-                className=" w-full h-full rounded-2xl object-cover grayscale cursor-none z-10"
+                className=" w-full h-full rounded-2xl object-cover grayscale/50 cursor-none z-10"
               />
             </NeonGradientCard>
           </motion.div>
