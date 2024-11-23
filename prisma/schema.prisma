@@ -14,3 +14,25 @@ model GuestbookEntry {
   email     String
   createdAt DateTime @default(now())
 }
+
+model ShortUrl {
+  id        String      @id @default(auto()) @map("_id") @db.ObjectId
+  slug      String      @unique
+  url       String
+  createdAt DateTime    @default(now())
+  visits    UrlVisit[]
+}
+
+model UrlVisit {
+  id           String    @id @default(auto()) @map("_id") @db.ObjectId
+  shortUrlId   String    @db.ObjectId
+  shortUrl     ShortUrl  @relation(fields: [shortUrlId], references: [id],onDelete: Cascade)
+  timestamp    DateTime  @default(now())
+  browser      String?
+  os           String?
+  device       String?
+  referrer     String?
+  country      String?
+  city         String?
+  ip           String?
+}

@@ -13,6 +13,7 @@ const PastExperiences: React.FC = () => {
     "7 people",
     "8 people",
     "11 people",
+    "20 people",
     "50+ people",
   ];
 
@@ -45,7 +46,7 @@ const PastExperiences: React.FC = () => {
             Over the years, I&apos;ve organized multiple trips for groups of all
             sizes, whether it&apos;s my{" "}
             <span className="font-semibold text-indigo-600 dark:text-indigo-400">
-              solo trip, duo adventure, or expeditions with up to 11 people
+              solo trip, duo adventure, or expeditions with up to 20 people
             </span>
             . Each journey is meticulously planned to ensure a balance of
             thrill, discovery, and unforgettable memories.
@@ -69,7 +70,7 @@ const PastExperiences: React.FC = () => {
             >
               <p className="font-bold text-lg md:text-xl">{size}</p>
 
-              {index == 9 ? (
+              {index == 10 ? (
                 <p className="text-sm text-gray-600 dark:text-gray-400">
                   on photowalks
                 </p>

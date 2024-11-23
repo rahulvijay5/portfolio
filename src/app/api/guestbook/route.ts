@@ -1,8 +1,7 @@
+import { prisma } from '@/lib/prisma'
 import { NextRequest, NextResponse } from 'next/server'
-import { PrismaClient } from '@prisma/client'
 // import { rateLimiter, runMiddleware } from '@/lib/rateLimit'
 
-const prisma = new PrismaClient()
 
 function setCorsHeaders(response: NextResponse) {
   response.headers.set('Access-Control-Allow-Origin', '*')

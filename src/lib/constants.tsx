@@ -108,54 +108,54 @@ export const socialHandles = {
     url: "https://www.instagram.com/rahul_vijay___",
     icon: Icons.instagram,
   },
-}
+};
 
 export const bucketListItems = [
-    {
-      text: "Manali to Leh on a Bicycle",
-      description:
-        "Pedal through the mountains, feel the wind, and embrace the challenge.",
-      icon: <Bike className="w-8 h-6" />,
-      color: "#7695FF",
-    },
-    {
-      text: "Camping at Tso Moriri Lake",
-      description: "Spend a night under the stars by the tranquil waters.",
-      icon: <Tent className="w-6 h-6" />,
-      color: "#FF3D71",
-    },
-    {
-      text: "Certification in Skiing from Auli",
-      description: "Master the slopes and embrace the thrill of the mountains.",
-      icon: <Mountain className="w-6 h-6" />,
-      color: "#00C9A7",
-    },
-    {
-      text: "Camper Van Journey Across India",
-      description:
-        "A year-long adventure across the diverse landscapes of India, making friends along the way.",
-      icon: <Caravan className="w-8 h-6" />,
-      color: "#FFB800",
-    },
-    {
-      text: "Paragliding Master from Bir Billing",
-      description: "Soar through the skies, experiencing the world from above.",
-      icon: <Compass className="w-6 h-6" />,
-      color: "#FF8A8A",
-    },
-    {
-      text: "Taste Every Regional Cuisine in India",
-      description:
-        "Embark on a culinary journey to savor the diverse flavors of India, from the spicy streets of Rajasthan to the coastal delicacies of Kerala.",
-      icon: <Utensils className="w-8 h-6" />,
-      color: "#405D72",
-    },
-  ];
+  {
+    text: "Manali to Leh on a Bicycle",
+    description:
+      "Pedal through the mountains, feel the wind, and embrace the challenge.",
+    icon: <Bike className="w-8 h-6" />,
+    color: "#7695FF",
+  },
+  {
+    text: "Camping at Tso Moriri Lake",
+    description: "Spend a night under the stars by the tranquil waters.",
+    icon: <Tent className="w-6 h-6" />,
+    color: "#FF3D71",
+  },
+  {
+    text: "Certification in Skiing from Auli",
+    description: "Master the slopes and embrace the thrill of the mountains.",
+    icon: <Mountain className="w-6 h-6" />,
+    color: "#00C9A7",
+  },
+  {
+    text: "Camper Van Journey Across India",
+    description:
+      "A year-long adventure across the diverse landscapes of India, making friends along the way.",
+    icon: <Caravan className="w-8 h-6" />,
+    color: "#FFB800",
+  },
+  {
+    text: "Paragliding Master from Bir Billing",
+    description: "Soar through the skies, experiencing the world from above.",
+    icon: <Compass className="w-6 h-6" />,
+    color: "#FF8A8A",
+  },
+  {
+    text: "Taste Every Regional Cuisine in India",
+    description:
+      "Embark on a culinary journey to savor the diverse flavors of India, from the spicy streets of Rajasthan to the coastal delicacies of Kerala.",
+    icon: <Utensils className="w-8 h-6" />,
+    color: "#405D72",
+  },
+];
 
-  export const demoUrl =
-    "https://images.unsplash.com/photo-1723341716427-e2c3ccdbade2?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
+export const demoUrl =
+  "https://images.unsplash.com/photo-1723341716427-e2c3ccdbade2?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
 
-  export const aboutMeContent = `
+export const aboutMeContent = `
   ![Rahul](https://imagedelivery.net/lLmNeOP7HXG0OqaG97wimw/clvlugru90000o4g8ahxp069s/db7abbe3-aa5c-433e-a16d-cbf137d1c9e5.png/public)
   
   Hello! I'm Rahul, a passionate traveler, adventurer, and self-taught programmer hailing from the small town of Kekri in Rajasthan. My journey has been a blend of academic pursuits and soul-stirring adventures, shaped by the diverse landscapes and cultures of India. Raised in a family that cherished the spirit of exploration, I inherited my father’s love for travel and a deep-seated curiosity to discover the unknown.
@@ -171,232 +171,251 @@ export const bucketListItems = [
   
   Rahul`;
 
+// Use respective image for respective adventure.
+export const adventureSectionContent = [
+  {
+    title: "Cross-Country Train Journey",
+    description: "One of India's longest train journeys, west to east",
+  },
+  {
+    title: "Kedarkantha Snowstorm",
+    description: "Rescued during a treacherous snowstorm",
+  },
+  {
+    title: "Wildlife Encounters",
+    description: "Close encounters with wild bears and leopards",
+  },
+  {
+    title: "Scooties to Gangotri",
+    description: "Defied odds, rode an Activa to Gangotri in the rain",
+  },
+];
 
-  // Use respective image for respective adventure.
-  export const adventureSectionContent = [
-    { title: "Kedarkantha Snowstorm", description: "Rescued during a treacherous snowstorm" },
-    { title: "Wildlife Encounters", description: "Close encounters with wild bears and leopards" },
-    { title: "Cross-Country Train Journey", description: "One of India's longest train journeys, west to east" },
-    { title: "Scooties to Gangotri", description: "Defied odds, rode an Activa to Gangotri in the rain" },
-  ];
-  
-  export const adventureSectionImages = [
-    'https://pub-820e71ce4d574173a723b481ca8f19c7.r2.dev/1724782184296-KedarkanthaAdventure.png',
-    'https://pub-820e71ce4d574173a723b481ca8f19c7.r2.dev/1724782249744-WildlifeEncounter.jpg',
-    'https://pub-820e71ce4d574173a723b481ca8f19c7.r2.dev/1724782218129-CrossCountryTrainJourney.jpg',
-    'https://pub-820e71ce4d574173a723b481ca8f19c7.r2.dev/1724782235184-ScootiesToGangotri.jpg',
-  ];
+export const adventureSectionImages = [
+  "https://pub-820e71ce4d574173a723b481ca8f19c7.r2.dev/1724782218129-CrossCountryTrainJourney.jpg",
+  "https://pub-820e71ce4d574173a723b481ca8f19c7.r2.dev/1724782184296-KedarkanthaAdventure.png",
+  "https://pub-820e71ce4d574173a723b481ca8f19c7.r2.dev/1724782249744-WildlifeEncounter.jpg",
+  "https://pub-820e71ce4d574173a723b481ca8f19c7.r2.dev/1724782235184-ScootiesToGangotri.jpg",
+];
 
-  // SKills used in creative section:
-  export const careerSectionSkills = [
-    {
-      name: "Trekking and Adventures",
-      icon: "🗻",
-      color: "bg-indigo-500",
-      description:
-        "Experienced in leading groups through challenging terrains while ensuring safety and enjoyment.",
-    },
-    {
-      name: "Travel Planning",
-      icon: "🗺️",
-      color: "bg-blue-500",
-      description:
-        "Expert in crafting unforgettable journeys tailored to individual preferences and budgets.",
-    },
-    {
-      name: "Content Creation",
-      icon: "📸",
-      color: "bg-purple-500",
-      description:
-        "Skilled in producing engaging travel content across various platforms, from photography to written articles.",
-    },
-    {
-      name: "Web Development",
-      icon: "💻",
-      color: "bg-green-500",
-      description:
-        "Coding the future, one line at a time. Building responsive and interactive web experiences.",
-    },
-    {
-      name: "Figma & Framer",
-      icon: "🎨",
-      color: "bg-pink-500",
-      description:
-        "Crafting digital experiences with precision and creativity, from wireframes to high-fidelity prototypes.",
-    },
-    {
-      name: "No-Code Tools",
-      icon: "🛠️",
-      color: "bg-yellow-500",
-      description:
-        "Building powerful applications with speed and efficiency, leveraging the latest no-code platforms.",
-    },
-    {
-      name: "Lightroom & Premiere Pro",
-      icon: "🎬",
-      color: "bg-red-500",
-      description:
-        "Transforming raw photos and videos into captivating stories that inspire wanderlust.",
-    },
-    {
-      name: "Effective Traveling",
-      icon: "✈️",
-      color: "bg-teal-500",
-      description:
-        "Navigating the globe with confidence and a strategic mind, maximizing experiences while minimizing hassles.",
-    },
-  ];
+// SKills used in creative section:
+export const careerSectionSkills = [
+  {
+    name: "Trekking and Adventures",
+    icon: "🗻",
+    color: "bg-indigo-500",
+    description:
+      "Experienced in leading groups through challenging terrains while ensuring safety and enjoyment.",
+  },
+  {
+    name: "Travel Planning",
+    icon: "🗺️",
+    color: "bg-blue-500",
+    description:
+      "Expert in crafting unforgettable journeys tailored to individual preferences and budgets.",
+  },
+  {
+    name: "Content Creation",
+    icon: "📸",
+    color: "bg-purple-500",
+    description:
+      "Skilled in producing engaging travel content across various platforms, from photography to written articles.",
+  },
+  {
+    name: "Web Development",
+    icon: "💻",
+    color: "bg-green-500",
+    description:
+      "Coding the future, one line at a time. Building responsive and interactive web experiences.",
+  },
+  {
+    name: "Figma & Framer",
+    icon: "🎨",
+    color: "bg-pink-500",
+    description:
+      "Crafting digital experiences with precision and creativity, from wireframes to high-fidelity prototypes.",
+  },
+  {
+    name: "No-Code Tools",
+    icon: "🛠️",
+    color: "bg-yellow-500",
+    description:
+      "Building powerful applications with speed and efficiency, leveraging the latest no-code platforms.",
+  },
+  {
+    name: "Lightroom & Premiere Pro",
+    icon: "🎬",
+    color: "bg-red-500",
+    description:
+      "Transforming raw photos and videos into captivating stories that inspire wanderlust.",
+  },
+  {
+    name: "Effective Traveling",
+    icon: "✈️",
+    color: "bg-teal-500",
+    description:
+      "Navigating the globe with confidence and a strategic mind, maximizing experiences while minimizing hassles.",
+  },
+];
 
-  export const socialAccounts = [
-    // { name: '@travel_the_worldd', followers: '10K+' },
-    { name: 'mumbai_tales', followers: '40K+' },
-    { name: 'imagination.lnmiit', followers: '2K+' },
-    { name: 'desportivos.lnmiit', followers: '2K+' },
-    { name: 'vivacity_lnmiit', followers: '6K+' },
-  ];
+export const socialAccounts = [
+  // { name: '@travel_the_worldd', followers: '10K+' },
+  { name: "mumbai_tales", followers: "40K+" },
+  { name: "imagination.lnmiit", followers: "2K+" },
+  { name: "desportivos.lnmiit", followers: "2K+" },
+  { name: "vivacity_lnmiit", followers: "6K+" },
+];
 
-  // export const videoLinks = [
-  //   { title: "Holi Video Shoot", url: "https://youtu.be/5-gjbAGuDq8" },
-  //   { title: "Mount Abu Vlog trailer", url: "https://youtu.be/ct_uJ3xbumw" },
-  //   { title: "Desportivos Aftermovie", url: "https://www.youtube.com/watch?v=example2" },
-  //   { title: "After Trek Short Reel", url: "https://www.instagram.com/reel/example2" },
-  // ]
+// export const videoLinks = [
+//   { title: "Holi Video Shoot", url: "https://youtu.be/5-gjbAGuDq8" },
+//   { title: "Mount Abu Vlog trailer", url: "https://youtu.be/ct_uJ3xbumw" },
+//   { title: "Desportivos Aftermovie", url: "https://www.youtube.com/watch?v=example2" },
+//   { title: "After Trek Short Reel", url: "https://www.instagram.com/reel/example2" },
+// ]
 
-  export const exploredLocations = [
-    "Ladakh",
-    "Dharamshala",
-    "Dalhousie",
-    "Manali",
-    "Kullu",
-    "Mussoorie",
-    "Harsil",
-    "Utarkashi",
-    "Dehradun",
-    "Rishikesh",
-    "Nainital",
-    "Pokhra",
-    "Kathmandu",
-    "Gangtok",
-    "Darjeeling",
-    "Guwahati",
-    "Shillong",
-    "Cherrapunji",
-  ];
+export const exploredLocations = [
+  "Ladakh",
+  "Dharamshala",
+  "Dalhousie",
+  "Manali",
+  "Kullu",
+  "Mussoorie",
+  "Harsil",
+  "Utarkashi",
+  "Dehradun",
+  "Rishikesh",
+  "Nainital",
+  "Pokhra",
+  "Kathmandu",
+  "Gangtok",
+  "Darjeeling",
+  "Guwahati",
+  "Shillong",
+  "Cherrapunji",
+];
 
-  export const travelerSectionImages = [
-    "https://pub-820e71ce4d574173a723b481ca8f19c7.r2.dev/1724783912788-Traveler1.jpg",
-    "https://pub-820e71ce4d574173a723b481ca8f19c7.r2.dev/1724783935453-Traveler2.jpg",
-    "https://pub-820e71ce4d574173a723b481ca8f19c7.r2.dev/1724783948758-Traveler3.jpg",
-  ];
+export const travelerSectionImages = [
+  "https://pub-820e71ce4d574173a723b481ca8f19c7.r2.dev/1724783912788-Traveler1.jpg",
+  "https://pub-820e71ce4d574173a723b481ca8f19c7.r2.dev/1724783935453-Traveler2.jpg",
+  "https://pub-820e71ce4d574173a723b481ca8f19c7.r2.dev/1724783948758-Traveler3.jpg",
+];
 
-  export const photographySectionImages = [
-    "https://pub-820e71ce4d574173a723b481ca8f19c7.r2.dev/1725128185156-20240703_122039.jpg",
-    "https://pub-820e71ce4d574173a723b481ca8f19c7.r2.dev/1724853924807-20220616-DSC_0261-1.jpg",
-    "https://pub-820e71ce4d574173a723b481ca8f19c7.r2.dev/1724853953507-DSC_0024.JPG",
-    "https://pub-820e71ce4d574173a723b481ca8f19c7.r2.dev/1724853884184-20220503-DSC_0047.jpg",
-  ];
+export const photographySectionImages = [
+  "https://pub-820e71ce4d574173a723b481ca8f19c7.r2.dev/1725128185156-20240703_122039.jpg",
+  "https://pub-820e71ce4d574173a723b481ca8f19c7.r2.dev/1724853924807-20220616-DSC_0261-1.jpg",
+  "https://pub-820e71ce4d574173a723b481ca8f19c7.r2.dev/1724853953507-DSC_0024.JPG",
+  "https://pub-820e71ce4d574173a723b481ca8f19c7.r2.dev/1724853884184-20220503-DSC_0047.jpg",
+];
 
-  export const pushingLimitsSectionImage = "https://pub-820e71ce4d574173a723b481ca8f19c7.r2.dev/1725127602564-IMG_20240716_122155.jpg"
+export const pushingLimitsSectionImage =
+  "https://pub-820e71ce4d574173a723b481ca8f19c7.r2.dev/1725127602564-IMG_20240716_122155.jpg";
 
-  export const sidebarSections = [
-    { id: "about_me", label: "About Me", icon: Home },
-    { id: "past_experiences", label: "Past Experiences", icon: Briefcase },
-    { id: "adventurer", label: "I am an Adventurer", icon: MountainIcon },
-    { id: "traveler", label: "I am a Traveler", icon: Globe },
-    { id: "storyteller", label: "I am a Storyteller", icon: Feather },
-    { id: "photographer", label: "I am a Photographer", icon: Aperture },
-    { id: "content_creator", label: "Content Creation", icon: Video },
-    { id: "pushing_limits", label: "Pushing the limits", icon: Flag },
-    { id: "terrioties", label: "Explored Territories", icon: Map },
-    { id: "passion-profession", label: "Passion = Career?", icon: Heart },
-    { id: "testimonials", label: "What others say?", icon: ThumbsUp },
-    { id: "bucket-list", label: "Bucket List", icon: List },
-    { id: "contact", label: "Let's Connect", icon: Mail },
-  ];
+export const sidebarSections = [
+  { id: "about_me", label: "About Me", icon: Home },
+  { id: "past_experiences", label: "Past Experiences", icon: Briefcase },
+  { id: "adventurer", label: "I am an Adventurer", icon: MountainIcon },
+  { id: "traveler", label: "I am a Traveler", icon: Globe },
+  { id: "storyteller", label: "I am a Storyteller", icon: Feather },
+  { id: "photographer", label: "I am a Photographer", icon: Aperture },
+  { id: "content_creator", label: "Content Creation", icon: Video },
+  { id: "pushing_limits", label: "Pushing the limits", icon: Flag },
+  { id: "terrioties", label: "Explored Territories", icon: Map },
+  { id: "passion-profession", label: "Passion = Career?", icon: Heart },
+  { id: "testimonials", label: "What others say?", icon: ThumbsUp },
+  { id: "bucket-list", label: "Bucket List", icon: List },
+  { id: "contact", label: "Let's Connect", icon: Mail },
+];
 
-  export const storytellerSectionImage = "https://pub-820e71ce4d574173a723b481ca8f19c7.r2.dev/1725131230396-storyteller.jpg"
+export const storytellerSectionImage =
+  "https://pub-820e71ce4d574173a723b481ca8f19c7.r2.dev/1725131230396-storyteller.jpg";
 
-  export const testimonials = [
-    {
-      name: "Shresth Jain",
-      quote: "Thanks to Rahul, I was able to drive my dream bike in the Himalayas. Without him, it would have remained just a dream.",
-      instagramHandle: "shresthjain14"
-    },
-    {
-      name: "Harsh Kesarwani",
-      quote: "Rahul's trips are more than just travel—they're about seeing the world differently. His passion for exploration ensures that everyone experiences the raw beauty of a place.",
-      instagramHandle: "harshk89_"
-    },
-    {
-      name: "Rashi Gupta",
-      quote: "Rahul made our college-ending trip unforgettable. Every moment was epic, thanks to his planning and enthusiasm.",
-      instagramHandle: "rashiii.g"
-    },
-    {
-      name: "Anshul Jain",
-      quote: "Rahul's itinerary for our Mathura trip was spot on. We couldn't have planned a better 28-hour trip, experiencing holi to that next level.",
-      instagramHandle: "anshul_jainn_"
-    },
-    {
-      name: "Asim Gouri",
-      quote: "Living at my dream destination was only possible because of Rahul. He made it happen, just the way I imagined.",
-      instagramHandle: "asim_gouri"
-    },
-    {
-      name: "Mahak Jain",
-      quote: "Some memories never fade, and our Mount Abu trip is one of them. Despite challenges, Rahul ensured we returned with only good memories.",
-      instagramHandle: "mahak.jain09"
-    }
-  ];
+export const testimonials = [
+  {
+    name: "Shresth Jain",
+    quote:
+      "Thanks to Rahul, I was able to drive my dream bike in the Himalayas. Without him, it would have remained just a dream.",
+    instagramHandle: "shresthjain14",
+  },
+  {
+    name: "Harsh Kesarwani",
+    quote:
+      "Rahul's trips are more than just travel—they're about seeing the world differently. His passion for exploration ensures that everyone experiences the raw beauty of a place.",
+    instagramHandle: "harshk89_",
+  },
+  {
+    name: "Rashi Gupta",
+    quote:
+      "Rahul made our college-ending trip unforgettable. Every moment was epic, thanks to his planning and enthusiasm.",
+    instagramHandle: "rashiii.g",
+  },
+  {
+    name: "Anshul Jain",
+    quote:
+      "Rahul's itinerary for our Mathura trip was spot on. We couldn't have planned a better 28-hour trip, experiencing holi to that next level.",
+    instagramHandle: "anshul_jainn_",
+  },
+  {
+    name: "Asim Gouri",
+    quote:
+      "Living at my dream destination was only possible because of Rahul. He made it happen, just the way I imagined.",
+    instagramHandle: "asim_gouri",
+  },
+  {
+    name: "Mahak Jain",
+    quote:
+      "Some memories never fade, and our Mount Abu trip is one of them. Despite challenges, Rahul ensured we returned with only good memories.",
+    instagramHandle: "mahak.jain09",
+  },
+];
 
-  // --------------------------------------------------------------------------------------
-  // --------------------------------------------------------------------------------------
-  // --------------------------------------------------------------------------------------
-  // --------------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------------
 
-  export const education: Education[] = [
-    {
-      degree: "Bachelor of Technology in Computer and Communication Engineering (CCE)",
-      institution: "The LNM Institute of Information Technology.",
-      location: "Jaipur, Rajasthan",
-      startDate: new Date(2020, 10),
-      endDate: new Date(2024, 5),
-      description:
+export const education: Education[] = [
+  {
+    degree:
+      "Bachelor of Technology in Computer and Communication Engineering (CCE)",
+    institution: "The LNM Institute of Information Technology.",
+    location: "Jaipur, Rajasthan",
+    startDate: new Date(2020, 10),
+    endDate: new Date(2024, 5),
+    description:
       "Specialization in computer and communication engineering, primarily learnt about software engineering and data structures, while completing a few of projects.",
-    },
-    {
-      degree: "High Schooling",
-      institution: "Maa Bharti Sr. Sec. School",
-      location: "Kota, Rajasthan",
-      startDate: new Date(2018, 4),
-      endDate: new Date(2020, 4),
-      description:
-        "Completed my 10+2 schooling from Kota, while scoring a total of 85.6% in RBSE Boards with my major in PCM.",
-    },
-  ];
+  },
+  {
+    degree: "High Schooling",
+    institution: "Maa Bharti Sr. Sec. School",
+    location: "Kota, Rajasthan",
+    startDate: new Date(2018, 4),
+    endDate: new Date(2020, 4),
+    description:
+      "Completed my 10+2 schooling from Kota, while scoring a total of 85.6% in RBSE Boards with my major in PCM.",
+  },
+];
 
-  export const experiences: Experience[] = [
-    {
-      title: "Software Engineer Intern",
-      company: "Eigengram Technologies",
-      location: "Remote",
-      startDate: new Date(2024, 5),
-      endDate: new Date(2024, 6),
-      description:
-        "Developed and hosted streamlit webapp for file uploading on AWS S3 and EC2, conducted web scraping with Python and BeautifulSoup and later conversion of these huge XML files to TSV for efficient data management, built a markdown-based documentation site using Next.js and Nextra. Used no-code tool framer to built their complete site to showcase their work.",
-    },
-    {
-      title: "Freelance Developer",
-      company: "Hirequotient",
-      location: "Remote",
-      startDate: new Date(2024, 5),
-      endDate: new Date(2024, 5),
-      description:
-        "Developed and successfully integrated 14 AI-powered tools for HireQuotient, including the NPS Calculator, AI Letter Generator, and AI Email Generator, ensuring robust performance in the production environment.",
-    },
-  ];
+export const experiences: Experience[] = [
+  {
+    title: "Software Engineer Intern",
+    company: "Eigengram Technologies",
+    location: "Remote",
+    startDate: new Date(2024, 5),
+    endDate: new Date(2024, 6),
+    description:
+      "Developed and hosted streamlit webapp for file uploading on AWS S3 and EC2, conducted web scraping with Python and BeautifulSoup and later conversion of these huge XML files to TSV for efficient data management, built a markdown-based documentation site using Next.js and Nextra. Used no-code tool framer to built their complete site to showcase their work.",
+  },
+  {
+    title: "Freelance Developer",
+    company: "Hirequotient",
+    location: "Remote",
+    startDate: new Date(2024, 5),
+    endDate: new Date(2024, 5),
+    description:
+      "Developed and successfully integrated 14 AI-powered tools for HireQuotient, including the NPS Calculator, AI Letter Generator, and AI Email Generator, ensuring robust performance in the production environment.",
+  },
+];
 
-  
 export const techSkills = [
   "typescript",
   "javascript",
@@ -442,7 +461,6 @@ export const techSkills = [
   "ubuntu",
   "openai",
   // "ml",
-
 ];
 
 export const projectsContent = [
@@ -451,9 +469,16 @@ export const projectsContent = [
     description: {
       details:
         "A complete fullstack wholesale order management platform, built for my father's shop, where customers can place their order under their business name with Clerk Auth, with complete admin privileges to admin, to view, modify, and manage orders, enabling insights with beautiful and modern UI and UI.",
-      skills: ["NextJs","Clerk","Docker","Postgresql","Prisma ORM","ShadcnUI"],
-      livelink:"https://vijaychai.vercel.app",
-      repolink:"https://github.com/rahulvijay5/store",
+      skills: [
+        "NextJs",
+        "Clerk",
+        "Docker",
+        "Postgresql",
+        "Prisma ORM",
+        "ShadcnUI",
+      ],
+      livelink: "https://vijaychai.vercel.app",
+      repolink: "https://github.com/rahulvijay5/store",
     },
     content: (
       <div className="h-full w-full  flex items-center justify-center text-white ">
@@ -470,11 +495,19 @@ export const projectsContent = [
   {
     title: "This Portfolio Site",
     description: {
-    details: "This is a fully responsive and dynamic portfolio site built using Next.js, TailwindCSS, and ShadcnUI. The site features a blog, project showcase, guestbook, and interactive components that highlight my skills as a developer. It’s designed with a minimalistic aesthetic, ensuring a clean and user-friendly experience across all devices.",
-    skills: ["Next.js","Cloudflare R2", "TailwindCSS", "Prisma", "TypeScript", "ShadcnUI",],
-    livelink: "https://rahulviijay.netlify.app/",
-    repolink: "https://github.com/rahulvijay5/portfolio"
-  },
+      details:
+        "This is a fully responsive and dynamic portfolio site built using Next.js, TailwindCSS, and ShadcnUI. The site features a blog, project showcase, guestbook, and interactive components that highlight my skills as a developer. It’s designed with a minimalistic aesthetic, ensuring a clean and user-friendly experience across all devices.",
+      skills: [
+        "Next.js",
+        "Cloudflare R2",
+        "TailwindCSS",
+        "Prisma",
+        "TypeScript",
+        "ShadcnUI",
+      ],
+      livelink: "https://rahulviijay.netlify.app/",
+      repolink: "https://github.com/rahulvijay5/portfolio",
+    },
     content: (
       <div className="h-full w-full  flex items-center justify-center text-white">
         <Image
@@ -490,9 +523,17 @@ export const projectsContent = [
   {
     title: "Realtime Web Chat Application",
     description: {
-      details: "A comprehensive realtime web chat application built using the MERN stack and Socket.IO allowing multiple users to chat with each other in real-time, with robust state management using Redux. It features user status management, allowing users to set their status to 'Busy' or 'Available', if a user is busy, others can chat with an AI instead, secured by JWT-based authentication to ensure data privacy.",
-      skills: ["Socket.IO", "MongoDB", "React.js", "TailwindCSS", "Redux", "JWT"],
-      repolink: "https://github.com/rahulvijay5/chatApp_hq"
+      details:
+        "A comprehensive realtime web chat application built using the MERN stack and Socket.IO allowing multiple users to chat with each other in real-time, with robust state management using Redux. It features user status management, allowing users to set their status to 'Busy' or 'Available', if a user is busy, others can chat with an AI instead, secured by JWT-based authentication to ensure data privacy.",
+      skills: [
+        "Socket.IO",
+        "MongoDB",
+        "React.js",
+        "TailwindCSS",
+        "Redux",
+        "JWT",
+      ],
+      repolink: "https://github.com/rahulvijay5/chatApp_hq",
     },
     content: (
       <div className="h-full w-full  flex items-center justify-center text-white">
@@ -511,8 +552,8 @@ export const projectsContent = [
     description: {
       details:
         "App that allows users to connect to others on the basis of their social connection level, how friendly they are to each other, users can manage their connections, their privacy their details like what they want to share and what now with others. (Currently I am building and working on this.)",
-      skills: ["Nextjs","KindeAuth", "TailwindCSS", "MongoDB", "Prisma"],
-      repolink:"https://github.com/rahulvijay5/connect",
+      skills: ["Nextjs", "KindeAuth", "TailwindCSS", "MongoDB", "Prisma"],
+      repolink: "https://github.com/rahulvijay5/connect",
     },
     content: (
       <div className="h-full w-full  flex items-center justify-center text-white">
@@ -529,8 +570,20 @@ export const projectsContent = [
 ];
 
 export const moreProjects = [
-  {title:"Thailand ID Verification App", repolink:"https://github.com/rahulvijay5/Qoala-OCR"},
-  {title:"Future Stock Prediction Model", repolink:"https://github.com/rahulvijay5/future_stock_prediction"},
-  {title:"Detect and Estimate Human Posture", repolink:"https://github.com/rahulvijay5/Posture_Detection_Using_Python"},
-  {title:"Data analysis on Endosulfan", repolink:"https://github.com/rahulvijay5/Data_Analysis_Using_Python"},
-]
+  {
+    title: "Thailand ID Verification App",
+    repolink: "https://github.com/rahulvijay5/Qoala-OCR",
+  },
+  {
+    title: "Future Stock Prediction Model",
+    repolink: "https://github.com/rahulvijay5/future_stock_prediction",
+  },
+  {
+    title: "Detect and Estimate Human Posture",
+    repolink: "https://github.com/rahulvijay5/Posture_Detection_Using_Python",
+  },
+  {
+    title: "Data analysis on Endosulfan",
+    repolink: "https://github.com/rahulvijay5/Data_Analysis_Using_Python",
+  },
+];
