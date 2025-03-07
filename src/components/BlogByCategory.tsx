@@ -8,6 +8,7 @@ import { ArrowUpRight, CircleX } from "lucide-react";
 import Link from "next/link";
 import { BlogPostsPreviewCategory } from "./BlogPostPreviewCategory";
 import { Button } from "./ui/button";
+import { Separator } from "./ui/separator";
 
 interface BlogByCategoryProps {
   category: string;
@@ -30,6 +31,9 @@ export const BlogByCategory: FunctionComponent<BlogByCategoryProps> = async ({
 
   return (
     <div className="w-full flex flex-col">
+      <p className="text-lg font-semibold">
+        My latest writings:
+      </p>
       <BlogPostsPreviewCategory posts={result.posts} />
       <Button asChild variant={"link"}>
       <Link href={`/tag/${category}/?page=1`} className="ml-auto flex gap-0 hover:scale-110 duration-1000 transition-all ease-in-out scale-105">

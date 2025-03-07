@@ -4,7 +4,7 @@ export interface Experience {
   location: string;
   startDate: Date;
   endDate: Date | null;
-  description: string;
+  description: string[];
 }
 
 export interface Education {
@@ -14,7 +14,7 @@ export interface Education {
   info?: string;
   startDate: Date;
   endDate?: Date | null;
-  description: string;
+  description: string[];
 }
 
 export interface ProjectCardProps {

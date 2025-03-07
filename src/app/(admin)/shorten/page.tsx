@@ -140,7 +140,7 @@ export default function ShortenPage() {
                   type="text"
                   placeholder="Custom short URL (optional)"
                   value={slug}
-                  onChange={(e) => setSlug(e.target.value)}
+                  onChange={(e) => setSlug(e.target.value.toLowerCase())}
                   className="bg-white dark:bg-gray-800 border-gray-300 dark:border-gray-700"
                 />
               </div>

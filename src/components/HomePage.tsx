@@ -1,9 +1,7 @@
 "use client"
 import AnimatedShinyText from "@/components/magicui/animated-shiny-text";
-import ShinyButton from "@/components/magicui/shiny-button";
 import Particles from "@/components/Particles";
 import { Button } from "@/components/ui/button";
-import { LampDemo } from "@/components/ui/lamp";
 import Link from "next/link";
 import React, { useState } from "react";
 

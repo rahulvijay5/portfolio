@@ -1,12 +1,14 @@
 import { NextResponse } from 'next/server'
 import { prisma } from '@/lib/prisma'
+import { use } from 'react'
 
 export async function DELETE(
   request: Request,
-  { params }: { params: { id: string } }
+  { params }: { params: Promise<{ id: string }> }
 ) {
   try {
-    const { id } = params
+    // checkkk
+    const { id } = await params
 
     // Delete the URL and its associated visits
     await prisma.shortUrl.delete({

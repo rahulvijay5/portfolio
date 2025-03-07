@@ -6,13 +6,16 @@ import { config } from "@/config";
 import { signOgImageUrl } from "@/lib/og-image";
 import { wisp } from "@/lib/wisp";
 import { notFound } from "next/navigation";
+import { use } from "react";
 import type { BlogPosting, WithContext } from "schema-dts";
 
 export async function generateMetadata({
-  params: { slug },
+  params,
 }: {
-  params: Params;
+  params: Promise<Params>;
 }) {
+  // checkkk
+  const {slug} = await params
   const result = await wisp.getPost(slug);
   if (!result || !result.post) {
     return {
@@ -37,7 +40,9 @@ interface Params {
   slug: string;
 }
 
-const Page = async ({ params: { slug } }: { params: Params }) => {
+const Page = async ({ params }: { params: Promise<Params> }) => {
+  // checkkk
+  const {slug} = await params
   const result = await wisp.getPost(slug);
   const { posts } = await wisp.getRelatedPosts({ slug, limit: 3 });
 

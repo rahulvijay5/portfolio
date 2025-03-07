@@ -23,6 +23,7 @@ const Skills = () => {
               <SkillBadge skillName="NextJs" />
               <SkillBadge skillName="ReactJs" />
               <SkillBadge skillName="TypeScript" />
+              <SkillBadge skillName="React native" />
               {/* Add more primary tech stack badges here */}
             </div>
           </div>
@@ -33,8 +34,9 @@ const Skills = () => {
             </h3>
             <div className="flex flex-wrap gap-2 mt-2">
               <SkillBadge skillName="AWS" />
-              <SkillBadge skillName="Redux Toolkit" />
+              <SkillBadge skillName="Zustand" />
               <SkillBadge skillName="SocketIO" />
+              <SkillBadge skillName="Expo" />
               {/* Add more additional skills here */}
             </div>
           </div>

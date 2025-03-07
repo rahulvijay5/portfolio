@@ -9,7 +9,7 @@ const TimelineItem: FunctionComponent<{
   startDate: Date;
   endDate?: Date | null;
   info?: string;
-  description: string;
+  description: string[];
 }> = ({
   title,
   organization,
@@ -21,7 +21,7 @@ const TimelineItem: FunctionComponent<{
 }) => {
   return (
     <div className="relative mb-8 pl-4 md:pl-8">
-      <div className="absolute top-0 py-6 left-0 h-full w-1 bg-gray-200"></div>
+      <div className="absolute top-0 py-6 left-0 h-full w-1 bg-gray-200 rounded-full" />
       <div className="relative">
         {/* <div className="absolute w-3 h-3 bg-white border-2 border-gray-900 rounded-full -left-6 top-0"></div> */}
         <div className="">
@@ -34,7 +34,18 @@ const TimelineItem: FunctionComponent<{
             </div>
             <p className="text-gray-600">{info ? info : ""}</p>
           </div>
-          <p className="mt-2">{description}</p>
+          {description.length==1?
+          description?.map((desc, index) => (
+            <div key={index} className="relative my-2">
+              <p className="">{desc}</p>
+            </div>
+          ))
+          :description?.map((desc, index) => (
+            <div key={index} className="relative my-2">
+              <div className="absolute top-0 rounded-full left-0 h-full w-1 bg-gray-200" />
+              <p className="pl-4">{desc}</p>
+            </div>
+          ))}
         </div>
       </div>
     </div>

@@ -1,15 +1,20 @@
 import { NextResponse } from "next/server";
 import { PrismaClient } from "@prisma/client";
+import { use } from "react";
 
 const prisma = new PrismaClient();
 
 export async function GET(
   request: Request,
-  { params }: { params: { slug: string } }
+  { params }: { params: Promise<{ slug: string }> }
 ) {
+
+  //checkkk
+  const { slug } = await params;
+
   try {
     const shortUrl = await prisma.shortUrl.findUnique({
-      where: { slug: params.slug },
+      where: { slug: slug },
       include: {
         visits: {
           orderBy: { timestamp: "desc" },

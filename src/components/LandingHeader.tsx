@@ -8,10 +8,11 @@ import { NeonGradientCard } from "./magicui/neon-gradient-card";
 import ShinyButton from "./magicui/shiny-button";
 import DarkModeToggleText from "./DarkModeToggleText";
 import WordRotate from "./magicui/word-rotate";
+import { ResumeLink } from "@/lib/constants";
 
 const DownloadResume = () => (
   <motion.a
-    href="https://pub-820e71ce4d574173a723b481ca8f19c7.r2.dev/1724777162070-Rahul_Resume_short.pdf"
+    href={ResumeLink}
     download
     target="_blank"
     whileHover={{ scale: 1.05 }}
@@ -68,7 +69,7 @@ const LandingHeader: React.FC = () => {
             className="relative"
           >
             {/* <div className="absolute inset-0 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full blur-2xl opacity-20"></div> */}
-            <NeonGradientCard className="max-w-sm opacity-70 items-center justify-center text-center relative rounded-lg">
+            {/* <NeonGradientCard className="max-w-sm opacity-70 items-center justify-center text-center relative rounded-lg"> */}
               <Image
                 alt="Rahul Vijay"
                 src="https://pub-820e71ce4d574173a723b481ca8f19c7.r2.dev/1724779074438-techHeaderImage.jpg"
@@ -76,7 +77,7 @@ const LandingHeader: React.FC = () => {
                 height={400}
                 className=" w-full h-full rounded-2xl object-cover grayscale/50 cursor-none z-10"
               />
-            </NeonGradientCard>
+            {/* </NeonGradientCard> */}
           </motion.div>
         </div>
         <div className="dark:hidden block mt-16 select-none w-full">

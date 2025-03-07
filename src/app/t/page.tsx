@@ -5,14 +5,12 @@ import Skills from "@/components/Skills";
 import { ExperienceAndEducation } from "@/components/WorkExperience";
 import React from "react";
 import ContactPage from "../c/components/Contact";
-import DarkModeToggleText from "@/components/DarkModeToggleText";
-import { TracingBeam } from "@/components/ui/tracing-beam";
 
 const tech = () => {
   return (
     <div className="flex items-center justify-center">
       {/* <TracingBeam className=""> */}
-      <div className="min-h-screen flex flex-col justify-center max-w-5xl pb-6 md:pb-16 ">
+      <div className="min-h-screen flex flex-col justify-center max-w-5xl pb-6 md:pb-16 " suppressHydrationWarning>
 
         <section>
           <LandingHeader />
@@ -35,7 +33,7 @@ const tech = () => {
         </section>
 
         <section className="p-4">
-          <BlogByCategory category="code" />
+          <BlogByCategory category="code"/>
         </section>
 
         <section className="bg-inherit">

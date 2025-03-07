@@ -25,6 +25,9 @@ import {
 import { Education, Experience, IconProps } from "./types";
 import Image from "next/image";
 
+export const ResumeLink =
+  "https://pub-820e71ce4d574173a723b481ca8f19c7.r2.dev/1724777162070-Rahul_Resume_short.pdf";
+
 export const Icons = {
   calendar: (props: IconProps) => <CalendarIcon {...props} />,
   email: (props: IconProps) => <MailIcon {...props} />,
@@ -381,8 +384,10 @@ export const education: Education[] = [
     location: "Jaipur, Rajasthan",
     startDate: new Date(2020, 10),
     endDate: new Date(2024, 5),
-    description:
+    description:[
+
       "Specialization in computer and communication engineering, primarily learnt about software engineering and data structures, while completing a few of projects.",
+    ]
   },
   {
     degree: "High Schooling",
@@ -390,29 +395,45 @@ export const education: Education[] = [
     location: "Kota, Rajasthan",
     startDate: new Date(2018, 4),
     endDate: new Date(2020, 4),
-    description:
+    description:[
+
       "Completed my 10+2 schooling from Kota, while scoring a total of 85.6% in RBSE Boards with my major in PCM.",
+    ]
   },
 ];
 
 export const experiences: Experience[] = [
   {
+    title: "System Engineer",
+    company: "IBM",
+    location: "Bangalore",
+    startDate: new Date(2024, 10),
+    endDate: null,
+    description: [
+      "Developed and hosted streamlit webapp for file uploading on AWS S3 and EC2, conducted web scraping with Python and BeautifulSoup and later conversion of these huge XML files to TSV for efficient data management, built a markdown-based documentation site using Next.js and Nextra. Used no-code tool framer to built their complete site to showcase their work.",
+    ],
+  },
+  {
     title: "Software Engineer Intern",
     company: "Eigengram Technologies",
     location: "Remote",
     startDate: new Date(2024, 5),
-    endDate: new Date(2024, 6),
-    description:
+    endDate: new Date(2024, 10),
+    description: [
       "Developed and hosted streamlit webapp for file uploading on AWS S3 and EC2, conducted web scraping with Python and BeautifulSoup and later conversion of these huge XML files to TSV for efficient data management, built a markdown-based documentation site using Next.js and Nextra. Used no-code tool framer to built their complete site to showcase their work.",
+    ],
   },
   {
     title: "Freelance Developer",
-    company: "Hirequotient",
+    company: "Hirequotient, Aceternity UI, Mehandy.in",
     location: "Remote",
     startDate: new Date(2024, 5),
     endDate: new Date(2024, 5),
-    description:
-      "Developed and successfully integrated 14 AI-powered tools for HireQuotient, including the NPS Calculator, AI Letter Generator, and AI Email Generator, ensuring robust performance in the production environment.",
+    description: [
+      "HireQuotient: Developed and successfully integrated 14 AI-powered tools for HireQuotient, including the NPS Calculator, AI Letter Generator, and AI Email Generator.",
+      "Aceternity UI: Built and Developed 5 of webpages for their client namely Jetify.com, working on their docs page and making them stand out.",
+      "Mehandy.in: Creating there simple landing web page, with some analytics tracking and storing them in Upstash redis.",
+    ],
   },
 ];
 
@@ -460,6 +481,11 @@ export const techSkills = [
   "linux",
   "ubuntu",
   "openai",
+  "expo",
+  "turborepo",
+  "react-native",
+  "redis",
+  "upstash",
   // "ml",
 ];
 

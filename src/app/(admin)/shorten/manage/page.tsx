@@ -30,9 +30,42 @@ export default function ManageUrlsPage() {
   const [password, setPassword] = useState("");
   const [isAuthorized, setIsAuthorized] = useState(false);
 
+  const handlePasswordSubmit = () => {
+    if (password === process.env.NEXT_PUBLIC_UPLOAD_PASSWORD) {
+      setIsAuthorized(true);
+      setIsModalOpen(false);
+      toast({
+        title: "Access Granted",
+        description: "You can now use the URL shortener.",
+      });
+    } else {
+      toast({
+        title: "Access Denied",
+        description: "Incorrect password. Try again!",
+        variant: "destructive",
+      });
+    }
+    setPassword("");
+  };
+
   useEffect(() => {
     fetchUrls();
   }, []);
+
+  useEffect(() => {
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Enter") {
+        event.preventDefault();
+        handlePasswordSubmit();
+      }
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
+
+    return () => {
+      window.removeEventListener("keydown", handleKeyDown);
+    };
+  }, [password]);
 
   const fetchUrls = async () => {
     try {
@@ -53,23 +86,7 @@ export default function ManageUrlsPage() {
     }
   };
 
-  const handlePasswordSubmit = () => {
-    if (password === process.env.NEXT_PUBLIC_UPLOAD_PASSWORD) {
-      setIsAuthorized(true);
-      setIsModalOpen(false);
-      toast({
-        title: "Access Granted",
-        description: "You can now use the URL shortener.",
-      });
-    } else {
-      toast({
-        title: "Access Denied",
-        description: "Incorrect password. Try again!",
-        variant: "destructive",
-      });
-    }
-    setPassword("");
-  };
+ 
 
   if (!isAuthorized) {
     return (
@@ -149,10 +166,10 @@ export default function ManageUrlsPage() {
                     className="flex items-center justify-between p-4 bg-white dark:bg-gray-800 rounded-lg shadow"
                   >
                     <div>
-                      <p className="font-semibold">
+                      <Link href={url.url} className="font-semibold">
                         rahulvijay.site/{url.slug}
-                      </p>
-                      <p className="text-sm text-gray-600 dark:text-gray-400">
+                      </Link>
+                      <p className="text-sm text-gray-600 dark:text-gray-400 truncate max-w-xs">
                         {url.url}
                       </p>
                       <p className="text-xs text-gray-500 dark:text-gray-500">

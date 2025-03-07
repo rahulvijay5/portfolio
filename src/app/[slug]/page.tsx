@@ -19,14 +19,17 @@ async function getLocationData(ip: string) {
 export default async function SlugPage({
   params,
 }: {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }) {
+
+  const slug = (await params).slug;
+
   const shortUrl = await prisma.shortUrl.findUnique({
-    where: { slug: params.slug },
+    where: { slug: slug },
   });
 
   if (shortUrl) {
-    const headersList = headers();
+    const headersList = await headers();
     const userAgent = headersList.get("user-agent") || "";
     const referer = headersList.get("referer");
     const ip = headersList.get("x-forwarded-for")?.split(",")[0] || "unknown";
