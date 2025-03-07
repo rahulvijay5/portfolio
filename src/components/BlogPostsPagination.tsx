@@ -24,7 +24,7 @@ export const BlogPostsPagination = ({
   };
 }) => {
   return (
-    <Pagination>
+    <Pagination className="pt-6">
       <PaginationContent>
         {pagination.prevPage && (
           <PaginationItem>
