@@ -2,6 +2,7 @@ import { redirect } from "next/navigation";
 import { prisma } from "@/lib/prisma";
 import { headers } from "next/headers";
 import { UAParser } from "ua-parser-js";
+import { getShortUrl } from "@/lib/redis";
 
 async function getLocationData(ip: string) {
   try {
@@ -21,14 +22,27 @@ export default async function SlugPage({
 }: {
   params: Promise<{ slug: string }>;
 }) {
-
   const slug = (await params).slug;
 
-  const shortUrl = await prisma.shortUrl.findUnique({
-    where: { slug: slug },
-  });
+  // Try fetching from Redis first
+  let url = await getShortUrl(slug);
+  console.log("Found this url back from redis: ",url)
 
-  if (shortUrl) {
+  let shortUrlId: string | null = null;
+
+  if (!url) {
+    const shortUrl = await prisma.shortUrl.findUnique({
+      where: { slug: slug },
+    });
+  
+    if (shortUrl) {
+      url = shortUrl.url;
+      shortUrlId = shortUrl.id; // Store the ID
+    }
+  }
+  
+
+  if (url) {
     const headersList = await headers();
     const userAgent = headersList.get("user-agent") || "";
     const referer = headersList.get("referer");
@@ -44,9 +58,9 @@ export default async function SlugPage({
     const location = await getLocationData(ip);
 
     // Record visit
-    await prisma.urlVisit.create({
+    prisma.urlVisit.create({
       data: {
-        shortUrlId: shortUrl.id,
+        shortUrlId: shortUrlId ?? "unknown", // Ensure we use a valid ObjectID
         browser: browser.name,
         os: os.name,
         device: device.type || "desktop",
@@ -57,7 +71,7 @@ export default async function SlugPage({
       },
     });
 
-    redirect(shortUrl.url);
+    redirect(url);
   }
 
   return (

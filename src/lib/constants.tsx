@@ -404,7 +404,7 @@ export const education: Education[] = [
 
 export const experiences: Experience[] = [
   {
-    title: "System Engineer",
+    title: "Application Developer",
     company: "IBM",
     location: "Bangalore",
     startDate: new Date(2024, 10),

@@ -75,7 +75,7 @@ const LandingHeader: React.FC = () => {
                 src="https://pub-820e71ce4d574173a723b481ca8f19c7.r2.dev/1724779074438-techHeaderImage.jpg"
                 width={400}
                 height={400}
-                className=" w-full h-full rounded-2xl object-cover grayscale/50 cursor-none z-10"
+                className=" w-full h-full rounded-2xl shadow-md object-cover grayscale/50 cursor-none z-10"
               />
             {/* </NeonGradientCard> */}
           </motion.div>

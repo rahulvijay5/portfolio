@@ -27,6 +27,7 @@
     "@tabler/icons-react": "^3.12.0",
     "@types/react-slick": "^0.23.13",
     "@types/sanitize-html": "^2.11.0",
+    "@upstash/redis": "^1.34.6",
     "@wisp-cms/client": "^0.0.10",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
