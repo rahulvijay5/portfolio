@@ -22,7 +22,6 @@ export async function POST(req: Request) {
 
         // Check Redis cache first
         const cachedUrl = await getShortUrl(slug);
-        console.log("found this cached url in redis: " ,cachedUrl)
         if (cachedUrl) {
             return NextResponse.json({
                 shortUrl: `https://rahulvijay.site/${slug}`,

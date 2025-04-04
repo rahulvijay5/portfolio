@@ -16,7 +16,11 @@ export async function DELETE(
       where: { id },
     })
 
-    await deleteShortUrl(id);
+    try {
+      await deleteShortUrl(id);
+    } catch (redisError) {
+      console.warn(`Redis deletion failed or key not found for ID: ${id}`);
+    }
 
     return NextResponse.json({ message: 'URL deleted successfully' })
   } catch (error) {

@@ -24,54 +24,37 @@ export default async function SlugPage({
 }) {
   const slug = (await params).slug;
 
-  // Try fetching from Redis first
-  let url = await getShortUrl(slug);
-  console.log("Found this url back from redis: ",url)
+  let urlPromise = getShortUrl(slug);
+  let shortUrlPromise = prisma.shortUrl.findUnique({ where: { slug } });
 
-  let shortUrlId: string | null = null;
-
-  if (!url) {
-    const shortUrl = await prisma.shortUrl.findUnique({
-      where: { slug: slug },
-    });
-  
-    if (shortUrl) {
-      url = shortUrl.url;
-      shortUrlId = shortUrl.id; // Store the ID
-    }
-  }
-  
+  // Await Redis first
+  let url = await urlPromise;
 
   if (url) {
-    const headersList = await headers();
-    const userAgent = headersList.get("user-agent") || "";
-    const referer = headersList.get("referer");
-    const ip = headersList.get("x-forwarded-for")?.split(",")[0] || "unknown";
 
-    // Parse user agent
-    const parser = new UAParser(userAgent);
-    const browser = parser.getBrowser();
-    const os = parser.getOS();
-    const device = parser.getDevice();
-
-    // Get location data
-    const location = await getLocationData(ip);
-
-    // Record visit
-    prisma.urlVisit.create({
-      data: {
-        shortUrlId: shortUrlId ?? "unknown", // Ensure we use a valid ObjectID
-        browser: browser.name,
-        os: os.name,
-        device: device.type || "desktop",
-        referrer: referer || null,
-        country: location.country,
-        city: location.city,
-        ip,
-      },
+    // Fetch the full short URL from DB in background
+    shortUrlPromise.then((shortUrl) => {
+      if (shortUrl) {
+        updateAnalytics(shortUrl.id);
+      } else {
+        console.error("Short URL not found in database.");
+      }
     });
 
+    // Redirect immediately
     redirect(url);
+  }
+
+  // If not in Redis, await DB result
+  let shortUrl = await shortUrlPromise;
+
+  if (shortUrl) {
+
+    // Track analytics asynchronously
+    updateAnalytics(shortUrl.id);
+
+    // Redirect instantly
+    redirect(shortUrl.url);
   }
 
   return (
@@ -86,4 +69,34 @@ export default async function SlugPage({
       </a>
     </div>
   );
+}
+
+// Background function to update analytics
+async function updateAnalytics(shortUrlId: string) {
+  const headersList = await headers();
+  const userAgent = headersList.get("user-agent") || "";
+  const referer = headersList.get("referer");
+  const ip = headersList.get("x-forwarded-for")?.split(",")[0] || "unknown";
+
+  // Parse user agent
+  const parser = new UAParser(userAgent);
+  const browser = parser.getBrowser();
+  const os = parser.getOS();
+  const device = parser.getDevice();
+
+  // Get location data asynchronously
+  const location = await getLocationData(ip);
+
+  prisma.urlVisit.create({
+    data: {
+      shortUrlId,
+      browser: browser.name || "Unknown",
+      os: os.name || "Unknown",
+      device: device.type || "desktop",
+      referrer: referer || null,
+      country: location.country || "Unknown",
+      city: location.city || "Unknown",
+      ip,
+    },
+  }).catch((err) => console.error("Failed to store analytics:", err));
 }

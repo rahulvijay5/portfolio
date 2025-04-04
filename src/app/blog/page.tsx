@@ -19,8 +19,6 @@ const Page = async ({
   // Fetch posts for the current page (limit: 7)
   const result = await wisp.getPosts({ limit: 7, page })
 
-  console.log("Page:" ,page)
-
   return (
     <div className="min-h-screen bg-gradient-to-b from-background via-background to-muted/30">
       <BlogNavbar />

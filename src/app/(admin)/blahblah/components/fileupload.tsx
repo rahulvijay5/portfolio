@@ -32,14 +32,11 @@ const ImageUpload = ({disabled}:{disabled:true | false}) => {
         body: formData,
       });
 
-      console.log(response);
-
       if (!response.ok) {
         throw new Error("Failed to upload image");
       }
 
       const { url } = await response.json();
-      console.log(url);
       setImageUrl(url);
     } catch (error: any) {
       setError(error.message);

@@ -26,7 +26,7 @@ import { Education, Experience, IconProps } from "./types";
 import Image from "next/image";
 
 export const ResumeLink =
-  "https://pub-820e71ce4d574173a723b481ca8f19c7.r2.dev/1724777162070-Rahul_Resume_short.pdf";
+  "https://rahulvijay.site/resume";
 
 export const Icons = {
   calendar: (props: IconProps) => <CalendarIcon {...props} />,
